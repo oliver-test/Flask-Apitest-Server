@@ -5,3 +5,6 @@
 *.egg-info
 dist
 build
+
+# Custom
+/app/log

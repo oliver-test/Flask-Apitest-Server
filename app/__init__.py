@@ -2,8 +2,20 @@ from flask import Flask
 from flask_jwt import JWT
 from conf.config import config
 import logging
+from logging.config import fileConfig
+import os
+# from app.rest.security import authenticate, identity
+
+fileConfig('conf/log-app.conf')
 
 
+
+def get_logger(name):
+    return logging.getLogger(name)
+
+
+def get_basedir():
+    return os.path.abspath(os.path.dirname(__file__))
 
 
 def get_config():
