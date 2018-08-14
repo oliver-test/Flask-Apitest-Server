@@ -5,7 +5,7 @@ import logging
 from logging.config import fileConfig
 import os
 # from app.rest.security import authenticate, identity
-
+from app.rest.login import login
 fileConfig('conf/log-app.conf')
 
 
