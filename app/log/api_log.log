@@ -60,3 +60,119 @@
 2018-08-14 17:17:26,841 werkzeug     WARNING   * Debugger is active!
 2018-08-14 17:17:26,866 werkzeug     INFO      * Debugger PIN: 156-326-699
 2018-08-14 17:17:31,705 werkzeug     INFO     127.0.0.1 - - [14/Aug/2018 17:17:31] "GET / HTTP/1.1" 200 -
+2018-08-14 22:32:42,147 werkzeug     INFO      * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2018-08-14 22:32:42,152 werkzeug     INFO      * Restarting with stat
+2018-08-14 22:32:42,374 werkzeug     WARNING   * Debugger is active!
+2018-08-14 22:32:42,382 werkzeug     INFO      * Debugger PIN: 339-093-568
+2018-08-14 22:34:18,134 werkzeug     INFO     127.0.0.1 - - [14/Aug/2018 22:34:18] "GET / HTTP/1.1" 404 -
+2018-08-14 22:34:51,898 werkzeug     INFO      * Detected change in '/Users/oliver/Flask-Apitest-Server/app/rest/login.py', reloading
+2018-08-14 22:34:51,939 werkzeug     INFO      * Restarting with stat
+2018-08-14 22:34:52,164 werkzeug     WARNING   * Debugger is active!
+2018-08-14 22:34:52,171 werkzeug     INFO      * Debugger PIN: 339-093-568
+2018-08-14 22:34:55,699 werkzeug     INFO     127.0.0.1 - - [14/Aug/2018 22:34:55] "GET / HTTP/1.1" 404 -
+2018-08-14 22:35:15,468 werkzeug     INFO      * Detected change in '/Users/oliver/Flask-Apitest-Server/app/rest/login.py', reloading
+2018-08-14 22:35:15,506 werkzeug     INFO      * Restarting with stat
+2018-08-14 22:35:15,715 werkzeug     WARNING   * Debugger is active!
+2018-08-14 22:35:15,723 werkzeug     INFO      * Debugger PIN: 339-093-568
+2018-08-14 22:35:47,104 werkzeug     INFO      * Detected change in '/Users/oliver/Flask-Apitest-Server/app/rest/login.py', reloading
+2018-08-14 22:35:47,143 werkzeug     INFO      * Restarting with stat
+2018-08-14 22:36:35,310 werkzeug     INFO      * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2018-08-14 22:36:35,318 werkzeug     INFO      * Restarting with stat
+2018-08-14 22:36:35,585 werkzeug     WARNING   * Debugger is active!
+2018-08-14 22:36:35,591 werkzeug     INFO      * Debugger PIN: 339-093-568
+2018-08-14 22:36:39,902 werkzeug     INFO     127.0.0.1 - - [14/Aug/2018 22:36:39] "GET / HTTP/1.1" 404 -
+2018-08-14 22:36:54,836 werkzeug     INFO      * Detected change in '/Users/oliver/Flask-Apitest-Server/app/__init__.py', reloading
+2018-08-14 22:36:54,891 werkzeug     INFO      * Restarting with stat
+2018-08-14 22:37:57,608 werkzeug     INFO      * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2018-08-14 22:37:57,618 werkzeug     INFO      * Restarting with stat
+2018-08-14 22:37:57,840 werkzeug     WARNING   * Debugger is active!
+2018-08-14 22:37:57,846 werkzeug     INFO      * Debugger PIN: 339-093-568
+2018-08-14 22:38:01,507 werkzeug     INFO     127.0.0.1 - - [14/Aug/2018 22:38:01] "GET / HTTP/1.1" 200 -
+2018-08-14 22:38:37,333 werkzeug     INFO      * Detected change in '/Users/oliver/Flask-Apitest-Server/app/rest/login.py', reloading
+2018-08-14 22:38:37,378 werkzeug     INFO      * Restarting with stat
+2018-08-14 22:38:37,645 werkzeug     WARNING   * Debugger is active!
+2018-08-14 22:38:37,653 werkzeug     INFO      * Debugger PIN: 339-093-568
+2018-08-14 22:38:40,712 werkzeug     INFO      * Detected change in '/Users/oliver/Flask-Apitest-Server/app/rest/login.py', reloading
+2018-08-14 22:38:40,752 werkzeug     INFO      * Restarting with stat
+2018-08-14 22:38:40,979 werkzeug     WARNING   * Debugger is active!
+2018-08-14 22:38:40,986 werkzeug     INFO      * Debugger PIN: 339-093-568
+2018-08-14 22:38:43,746 werkzeug     INFO     127.0.0.1 - - [14/Aug/2018 22:38:43] "GET / HTTP/1.1" 404 -
+2018-08-14 22:39:58,955 werkzeug     INFO      * Detected change in '/Users/oliver/Flask-Apitest-Server/app/rest/login.py', reloading
+2018-08-14 22:39:58,995 werkzeug     INFO      * Restarting with stat
+2018-08-14 22:48:23,495 werkzeug     INFO      * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2018-08-14 22:48:23,502 werkzeug     INFO      * Restarting with stat
+2018-08-14 22:48:23,739 werkzeug     WARNING   * Debugger is active!
+2018-08-14 22:48:23,747 werkzeug     INFO      * Debugger PIN: 339-093-568
+2018-08-14 22:49:10,185 werkzeug     INFO     127.0.0.1 - - [14/Aug/2018 22:49:10] "POST / HTTP/1.1" 200 -
+2018-08-14 22:49:42,115 werkzeug     INFO     127.0.0.1 - - [14/Aug/2018 22:49:42] "POST / HTTP/1.1" 200 -
+2018-08-14 22:50:08,941 werkzeug     INFO     127.0.0.1 - - [14/Aug/2018 22:50:08] "POST / HTTP/1.1" 200 -
+2018-08-14 22:50:36,320 werkzeug     INFO      * Detected change in '/Users/oliver/Flask-Apitest-Server/app/rest/login.py', reloading
+2018-08-14 22:50:36,378 werkzeug     INFO      * Restarting with stat
+2018-08-14 22:50:36,652 werkzeug     WARNING   * Debugger is active!
+2018-08-14 22:50:36,660 werkzeug     INFO      * Debugger PIN: 339-093-568
+2018-08-14 22:50:39,802 werkzeug     INFO     127.0.0.1 - - [14/Aug/2018 22:50:39] "POST / HTTP/1.1" 200 -
+2018-08-14 22:54:36,987 werkzeug     INFO     127.0.0.1 - - [14/Aug/2018 22:54:36] "POST / HTTP/1.1" 200 -
+2018-08-14 22:54:50,831 werkzeug     INFO     127.0.0.1 - - [14/Aug/2018 22:54:50] "POST / HTTP/1.1" 200 -
+2018-08-14 23:00:34,805 werkzeug     INFO      * Detected change in '/Users/oliver/Flask-Apitest-Server/app/rest/login.py', reloading
+2018-08-14 23:00:34,846 werkzeug     INFO      * Restarting with stat
+2018-08-14 23:00:35,120 werkzeug     WARNING   * Debugger is active!
+2018-08-14 23:00:35,127 werkzeug     INFO      * Debugger PIN: 339-093-568
+2018-08-14 23:02:31,938 werkzeug     INFO     127.0.0.1 - - [14/Aug/2018 23:02:31] "POST / HTTP/1.1" 200 -
+2018-08-14 23:02:46,806 werkzeug     INFO     127.0.0.1 - - [14/Aug/2018 23:02:46] "POST / HTTP/1.1" 200 -
+2018-08-14 23:03:33,845 werkzeug     INFO     127.0.0.1 - - [14/Aug/2018 23:03:33] "POST / HTTP/1.1" 200 -
+2018-08-14 23:04:02,441 werkzeug     INFO      * Detected change in '/Users/oliver/Flask-Apitest-Server/app/rest/login.py', reloading
+2018-08-14 23:04:02,498 werkzeug     INFO      * Restarting with stat
+2018-08-14 23:04:02,781 werkzeug     WARNING   * Debugger is active!
+2018-08-14 23:04:02,788 werkzeug     INFO      * Debugger PIN: 339-093-568
+2018-08-14 23:04:09,888 werkzeug     INFO      * Detected change in '/Users/oliver/Flask-Apitest-Server/app/rest/login.py', reloading
+2018-08-14 23:04:09,951 werkzeug     INFO      * Restarting with stat
+2018-08-14 23:04:10,245 werkzeug     WARNING   * Debugger is active!
+2018-08-14 23:04:10,252 werkzeug     INFO      * Debugger PIN: 339-093-568
+2018-08-14 23:04:15,753 werkzeug     INFO     127.0.0.1 - - [14/Aug/2018 23:04:15] "POST / HTTP/1.1" 500 -
+2018-08-14 23:05:04,920 werkzeug     INFO      * Detected change in '/Users/oliver/Flask-Apitest-Server/app/rest/login.py', reloading
+2018-08-14 23:05:04,974 werkzeug     INFO      * Restarting with stat
+2018-08-14 23:05:05,215 werkzeug     WARNING   * Debugger is active!
+2018-08-14 23:05:05,221 werkzeug     INFO      * Debugger PIN: 339-093-568
+2018-08-14 23:08:40,782 werkzeug     INFO      * Detected change in '/Users/oliver/Flask-Apitest-Server/app/rest/login.py', reloading
+2018-08-14 23:08:40,823 werkzeug     INFO      * Restarting with stat
+2018-08-14 23:08:41,042 werkzeug     WARNING   * Debugger is active!
+2018-08-14 23:08:41,048 werkzeug     INFO      * Debugger PIN: 339-093-568
+2018-08-14 23:10:02,075 werkzeug     INFO      * Detected change in '/Users/oliver/Flask-Apitest-Server/app/rest/login.py', reloading
+2018-08-14 23:10:02,126 werkzeug     INFO      * Restarting with stat
+2018-08-14 23:10:02,336 werkzeug     WARNING   * Debugger is active!
+2018-08-14 23:10:02,342 werkzeug     INFO      * Debugger PIN: 339-093-568
+2018-08-14 23:10:13,986 werkzeug     INFO     127.0.0.1 - - [14/Aug/2018 23:10:13] "POST / HTTP/1.1" 500 -
+2018-08-14 23:10:46,400 werkzeug     INFO     127.0.0.1 - - [14/Aug/2018 23:10:46] "POST / HTTP/1.1" 500 -
+2018-08-14 23:10:55,625 werkzeug     INFO      * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2018-08-14 23:10:55,636 werkzeug     INFO      * Restarting with stat
+2018-08-14 23:10:55,868 werkzeug     WARNING   * Debugger is active!
+2018-08-14 23:10:55,874 werkzeug     INFO      * Debugger PIN: 339-093-568
+2018-08-14 23:11:00,167 werkzeug     INFO     127.0.0.1 - - [14/Aug/2018 23:11:00] "POST / HTTP/1.1" 500 -
+2018-08-14 23:11:17,147 werkzeug     INFO      * Detected change in '/Users/oliver/Flask-Apitest-Server/app/rest/login.py', reloading
+2018-08-14 23:11:17,192 werkzeug     INFO      * Restarting with stat
+2018-08-14 23:11:17,402 werkzeug     WARNING   * Debugger is active!
+2018-08-14 23:11:17,408 werkzeug     INFO      * Debugger PIN: 339-093-568
+2018-08-14 23:11:29,610 werkzeug     INFO     127.0.0.1 - - [14/Aug/2018 23:11:29] "POST / HTTP/1.1" 500 -
+2018-08-14 23:11:43,749 werkzeug     INFO      * Detected change in '/Users/oliver/Flask-Apitest-Server/app/rest/login.py', reloading
+2018-08-14 23:11:43,799 werkzeug     INFO      * Restarting with stat
+2018-08-14 23:11:44,019 werkzeug     WARNING   * Debugger is active!
+2018-08-14 23:11:44,028 werkzeug     INFO      * Debugger PIN: 339-093-568
+2018-08-14 23:11:57,189 werkzeug     INFO      * Detected change in '/Users/oliver/Flask-Apitest-Server/app/rest/login.py', reloading
+2018-08-14 23:11:57,231 werkzeug     INFO      * Restarting with stat
+2018-08-14 23:11:57,451 werkzeug     WARNING   * Debugger is active!
+2018-08-14 23:11:57,457 werkzeug     INFO      * Debugger PIN: 339-093-568
+2018-08-14 23:12:00,217 werkzeug     INFO     127.0.0.1 - - [14/Aug/2018 23:12:00] "POST / HTTP/1.1" 200 -
+2018-08-14 23:14:32,290 werkzeug     INFO      * Detected change in '/Users/oliver/Flask-Apitest-Server/app/rest/login.py', reloading
+2018-08-14 23:14:32,331 werkzeug     INFO      * Restarting with stat
+2018-08-14 23:14:32,554 werkzeug     WARNING   * Debugger is active!
+2018-08-14 23:14:32,560 werkzeug     INFO      * Debugger PIN: 339-093-568
+2018-08-14 23:28:15,777 werkzeug     INFO      * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2018-08-14 23:28:15,783 werkzeug     INFO      * Restarting with stat
+2018-08-14 23:28:16,024 werkzeug     WARNING   * Debugger is active!
+2018-08-14 23:28:16,032 werkzeug     INFO      * Debugger PIN: 339-093-568
+2018-08-14 23:28:22,896 werkzeug     INFO     127.0.0.1 - - [14/Aug/2018 23:28:22] "POST / HTTP/1.1" 400 -
+2018-08-14 23:28:27,368 werkzeug     INFO     127.0.0.1 - - [14/Aug/2018 23:28:27] "POST / HTTP/1.1" 200 -
+2018-08-14 23:36:49,403 werkzeug     INFO      * Detected change in '/Users/oliver/Flask-Apitest-Server/conf/config.py', reloading
+2018-08-14 23:36:49,449 werkzeug     INFO      * Restarting with stat
+2018-08-14 23:36:49,710 werkzeug     WARNING   * Debugger is active!
+2018-08-14 23:36:49,717 werkzeug     INFO      * Debugger PIN: 339-093-568

@@ -4,7 +4,7 @@ basedir = os.path.abspath(os.path.dirname(__file__))
 
 
 class Config:
-    SECRET_KEY = os.environ.get('SECRET_KEY') or 'your-secret'
+    SECRET_KEY = 'my api-test'
     DB_HOST = '127.0.0.1'
     DB_USER = 'root'
     DB_PASSWD = '11111111'
