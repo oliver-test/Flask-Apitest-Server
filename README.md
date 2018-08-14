@@ -14,7 +14,7 @@
 - flask-script
 
 
-###环境配置
+### 环境配置
 ## 第三方依赖安装
 ```
 pip3 install -r dependence_install.txt
