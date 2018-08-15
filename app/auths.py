@@ -55,7 +55,7 @@ class Auth():
             if(User.check_password(ture_passowrd,password)):
                 login_time = int(time.time())
                 token = self.encode_auth_token(userInfo.id,login_time)
-                print(token)
+                
                 return common.jsonresp(jsonobj=token.decode(),status=200)
             else:
                 return common.jsonresp(status=400,errinfo='密码不正确')
