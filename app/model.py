@@ -11,6 +11,7 @@ import os
 cfg = config[os.getenv('FLASK_CONFIG') or 'default']
 
 db = MySQLDatabase(host=cfg.DB_HOST, user=cfg.DB_USER, passwd=cfg.DB_PASSWD, database=cfg.DB_DATABASE)
+# db = MySQLDatabase('education', host='127.0.0.1', user='root', passwd='11111111', charset='utf8', port=3306)
 
 
 class BaseModel(Model):
@@ -29,12 +30,15 @@ class BaseModel(Model):
 
 # 用户表
 class User(UserMixin, BaseModel):
+    
     username = CharField(verbose_name='用户名',null=False)  # 用户名
     password = CharField(verbose_name='密码',null=False)  # 密码
     status = IntegerField(verbose_name='状态',null=False,default=0)#状态-0正常-1禁用
     role_id = IntegerField(verbose_name='角色')#角色-1用户-0管理员
 
-    
+    @staticmethod
+    def check_password(tpassword,raw_password):
+        return check_password_hash(tpassword,raw_password)
     
     def verify_password(self, raw_password):
         return check_password_hash(self.password, raw_password)
@@ -60,4 +64,6 @@ def create_table():
 
 
 if __name__ == '__main__':
-    create_table()
+    db.connect()
+    # userInfo = User.get(User.username == 'admin')
+    # print(userInfo.__data__)
