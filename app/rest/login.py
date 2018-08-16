@@ -32,3 +32,12 @@ def login():
 def getuser(id=None):
     usermodle = User.get(User.id == id)
     return common.jsonresp(jsonobj=common.obj_to_dict(usermodle))
+
+@rest.route('/user',methods=['GET'])
+def checktoken():
+    '''
+    对token进行鉴权，获取用户信息
+    :return:json
+    '''
+    result = Auth.identify(Auth,request)
+    return common.jsonresp(jsonobj=result,status=200)

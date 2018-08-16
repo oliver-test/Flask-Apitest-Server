@@ -27,3 +27,18 @@ def datetime_handler(x):
         # return x.isoformat()
         return x.strftime("%Y-%m-%d %H:%M:%S")
     raise TypeError("Unknown type")
+
+def trueReturn(data, msg):
+    return {
+        "status": True,
+        "data": data,
+        "msg": msg
+    }
+
+
+def falseReturn(data, msg):
+    return {
+        "status": False,
+        "data": data,
+        "msg": msg
+    }
