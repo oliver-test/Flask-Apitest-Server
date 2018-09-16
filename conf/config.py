@@ -4,10 +4,19 @@ basedir = os.path.abspath(os.path.dirname(__file__))
 
 
 class Config:
-    SECRET_KEY = 'my api-test'
-    DB_HOST = '127.0.0.1'
+   #本地环境
+    # SECRET_KEY = os.environ.get('SECRET_KEY') or 'your-secret'
+    # DB_HOST = '127.0.0.1'
+    # DB_USER = 'root'
+    # DB_PASSWD = '11111111'
+    # DB_DATABASE = 'education'
+    # ITEMS_PER_PAGE = 10
+
+    #线上环境  
+    SECRET_KEY = os.environ.get('SECRET_KEY') or 'your-secret'
+    DB_HOST = '39.107.92.144'
     DB_USER = 'root'
-    DB_PASSWD = '11111111'
+    DB_PASSWD = 'qweqwe123'
     DB_DATABASE = 'education'
     ITEMS_PER_PAGE = 10
     
