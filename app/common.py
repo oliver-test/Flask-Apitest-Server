@@ -42,3 +42,10 @@ def falseReturn(data, msg):
         "data": data,
         "msg": msg
     }
+
+def obj_to_dict(obj, exclude=None):
+    dict = obj.__dict__['__data__']
+    if exclude:
+        for key in exclude:
+            if key in dict: dict.pop(key)
+    return dict

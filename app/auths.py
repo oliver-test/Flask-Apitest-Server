@@ -7,7 +7,7 @@ from conf.config import config
 import os
 from werkzeug.security import check_password_hash,generate_password_hash
 
-#加载配置文件
+#加载配置
 cfg = config[os.getenv('FLASK_CONFIG') or 'default']
 
 class Auth():
@@ -97,13 +97,14 @@ class Auth():
                 if not isinstance(payload, str):
                     
                     user = User.get(User.id==payload['data']['id'])
+                    user_info=common.obj_to_dict(user)
                     if (user is None):
                         # result = common.falseReturn('', '找不到该用户信息')
                         result = common.jsonresp(status=400,errinfo='找不到该用户信息')
                     else:
-                        result = common.trueReturn(user.id, '请求成功')
-                        print('1')
-                        # result = common.jsonresp(jsonobj=payload,status=200)
+                        # result = common.trueReturn(user.id, '请求成功')
+                        
+                        result = common.jsonresp(jsonobj=user_info,status=200)
                         # if (user.login_time == payload['data']['login_time']):
                         #     result = common.trueReturn(user.id, '请求成功')
                         # else:

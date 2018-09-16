@@ -650,3 +650,31 @@
 2018-08-16 23:26:23,400 werkzeug     INFO      * Debugger PIN: 339-093-568
 2018-08-16 23:26:26,075 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
 2018-08-16 23:26:26,084 werkzeug     INFO     127.0.0.1 - - [16/Aug/2018 23:26:26] "GET /user HTTP/1.1" 200 -
+2018-08-18 15:02:04,667 werkzeug     INFO      * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2018-08-18 15:02:04,673 werkzeug     INFO      * Restarting with stat
+2018-08-18 15:02:04,915 werkzeug     WARNING   * Debugger is active!
+2018-08-18 15:02:04,923 werkzeug     INFO      * Debugger PIN: 339-093-568
+2018-08-18 15:02:20,435 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2018-08-18 15:02:20,461 werkzeug     INFO     127.0.0.1 - - [18/Aug/2018 15:02:20] "GET /user HTTP/1.1" 200 -
+2018-08-18 15:02:51,504 werkzeug     INFO      * Detected change in '/Users/oliver/Flask-Apitest-Server/app/auths.py', reloading
+2018-08-18 15:02:51,555 werkzeug     INFO      * Restarting with stat
+2018-08-18 15:02:51,812 werkzeug     WARNING   * Debugger is active!
+2018-08-18 15:02:51,819 werkzeug     INFO      * Debugger PIN: 339-093-568
+2018-08-18 15:03:23,255 werkzeug     INFO      * Detected change in '/Users/oliver/Flask-Apitest-Server/app/auths.py', reloading
+2018-08-18 15:03:23,310 werkzeug     INFO      * Restarting with stat
+2018-08-18 15:03:23,589 werkzeug     WARNING   * Debugger is active!
+2018-08-18 15:03:23,600 werkzeug     INFO      * Debugger PIN: 339-093-568
+2018-08-18 15:03:31,723 werkzeug     INFO      * Detected change in '/Users/oliver/Flask-Apitest-Server/app/auths.py', reloading
+2018-08-18 15:03:31,772 werkzeug     INFO      * Restarting with stat
+2018-08-18 15:03:32,024 werkzeug     WARNING   * Debugger is active!
+2018-08-18 15:03:32,031 werkzeug     INFO      * Debugger PIN: 339-093-568
+2018-08-18 15:03:34,341 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2018-08-18 15:03:34,361 werkzeug     INFO     127.0.0.1 - - [18/Aug/2018 15:03:34] "GET /user HTTP/1.1" 500 -
+2018-08-18 15:04:36,920 werkzeug     INFO      * Detected change in '/Users/oliver/Flask-Apitest-Server/app/auths.py', reloading
+2018-08-18 15:04:36,968 werkzeug     INFO      * Restarting with stat
+2018-08-19 00:13:03,009 werkzeug     INFO      * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2018-08-19 00:13:03,015 werkzeug     INFO      * Restarting with stat
+2018-08-19 00:13:03,283 werkzeug     WARNING   * Debugger is active!
+2018-08-19 00:13:03,291 werkzeug     INFO      * Debugger PIN: 339-093-568
+2018-08-19 00:13:08,088 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2018-08-19 00:13:08,125 werkzeug     INFO     127.0.0.1 - - [19/Aug/2018 00:13:08] "GET /user HTTP/1.1" 500 -
