@@ -17,6 +17,7 @@ class Config:
     DB_HOST = '39.107.92.144'
     DB_USER = 'root'
     DB_PASSWD = 'qweqwe123'
+    DB_PASSWD = '=U_v*OipJ4z7'
     DB_DATABASE = 'education'
     ITEMS_PER_PAGE = 10
     
