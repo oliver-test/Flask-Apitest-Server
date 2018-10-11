@@ -5,6 +5,8 @@ from flask import jsonify
 from app import common
 from app.auths import Auth
 from app.model import User
+from playhouse.shortcuts import model_to_dict
+from app.until.response import response
 app = Flask(__name__)
 
 @rest.route('/',methods=['POST','GET'])
@@ -14,8 +16,11 @@ def login():
     用户登陆接口
     return:token
     '''
-    username = request.form.get('username')
-    password = request.form.get('password')
+    data = json.loads(request.get_data(as_text=True))
+    # username = request.form.get('username')
+    # password = request.form.get('password')
+    username = data['username']
+    password = data['password']
 
 
     if (not username or not password):
@@ -26,14 +31,7 @@ def login():
         print(Auth.authenticate(Auth,username,password))
         return Auth.authenticate(Auth,username,password)
 
-
-@rest.route('/getuser',methods=['GET'])
-@rest.route('/getuser/<id>',methods=['GET'])
-def getuser(id=None):
-    usermodle = User.get(User.id == id)
-    return common.jsonresp(jsonobj=common.obj_to_dict(usermodle))
-
-@rest.route('/user',methods=['GET'])
+@rest.route('/user',methods=['POST'])
 def checktoken():
     '''
     对token进行鉴权，获取用户信息
@@ -41,3 +39,13 @@ def checktoken():
     '''
     result = Auth.identify(Auth,request)
     return common.jsonresp(jsonobj=result,status=200)
+
+@rest.route('/getuserinfo',methods=['GET'])
+def getuserinfo():
+    '''
+    解析token
+    返回用户信息
+    '''
+    usertoken = request.args.get('token')
+    result = Auth.getuserinfo(Auth,usertoken)
+    return result

@@ -21,6 +21,7 @@ def datetime_handler(x):
 
 a = datetime_handler(datetime.datetime.now())
 print (type(a))
+print(a)
 
 b = datetime.datetime.now()
 print(type(b))

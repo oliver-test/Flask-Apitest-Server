@@ -4,6 +4,7 @@ from conf.config import config
 import logging
 from logging.config import fileConfig
 import os
+from flask_cors import CORS
 # from app.rest.security import authenticate, identity
 # from app.rest.login import login
 fileConfig('conf/log-app.conf')
@@ -24,6 +25,7 @@ def get_config():
 
 def create_app(config_name):
     app = Flask(__name__)
+    CORS(app)
     app.config.from_object(config[config_name])
     config[config_name].init_app(app)
     # jwt = JWT(app, authenticate, identity)

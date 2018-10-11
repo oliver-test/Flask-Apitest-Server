@@ -5,21 +5,20 @@ basedir = os.path.abspath(os.path.dirname(__file__))
 
 class Config:
    #本地环境
-    # SECRET_KEY = os.environ.get('SECRET_KEY') or 'your-secret'
-    # DB_HOST = '127.0.0.1'
-    # DB_USER = 'root'
-    # DB_PASSWD = '11111111'
-    # DB_DATABASE = 'education'
-    # ITEMS_PER_PAGE = 10
-
-    #线上环境  
     SECRET_KEY = os.environ.get('SECRET_KEY') or 'your-secret'
-    DB_HOST = '39.107.92.144'
+    DB_HOST = '127.0.0.1'
     DB_USER = 'root'
-    DB_PASSWD = 'qweqwe123'
-    DB_PASSWD = '=U_v*OipJ4z7'
+    DB_PASSWD = '11111111'
     DB_DATABASE = 'education'
     ITEMS_PER_PAGE = 10
+
+    #线上环境  
+    # SECRET_KEY = os.environ.get('SECRET_KEY') or 'your-secret'
+    # DB_HOST = '39.107.92.144'
+    # DB_USER = 'root'
+    # DB_PASSWD = 'mcr2018..'
+    # DB_DATABASE = 'education'
+    # ITEMS_PER_PAGE = 10
     
     @staticmethod
     def init_app(app):
