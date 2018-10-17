@@ -1,0 +1,8 @@
+app/log/api_log.log
+*.pyc*
+*.so
+*.egg
+*.egg-info
+dist
+build
+*.log
