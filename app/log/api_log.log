@@ -2624,3 +2624,827 @@
 2018-10-11 23:49:40,220 werkzeug     INFO     127.0.0.1 - - [11/Oct/2018 23:49:40] "OPTIONS /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
 2018-10-11 23:49:40,232 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1`', [])
 2018-10-11 23:49:40,238 werkzeug     INFO     127.0.0.1 - - [11/Oct/2018 23:49:40] "GET /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-12 00:23:44,227 werkzeug     INFO      * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2018-10-12 00:23:44,232 werkzeug     INFO      * Restarting with stat
+2018-10-12 00:23:44,497 werkzeug     WARNING   * Debugger is active!
+2018-10-12 00:23:44,506 werkzeug     INFO      * Debugger PIN: 339-093-568
+2018-10-12 00:23:49,215 werkzeug     INFO     127.0.0.1 - - [12/Oct/2018 00:23:49] "OPTIONS /login HTTP/1.1" 200 -
+2018-10-12 00:23:49,223 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` WHERE (`t1`.`username` = %s) LIMIT %s OFFSET %s', ['admin', 1, 0])
+2018-10-12 00:23:49,361 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` WHERE (`t1`.`username` = %s) LIMIT %s OFFSET %s', ['admin', 1, 0])
+2018-10-12 00:23:49,489 werkzeug     INFO     127.0.0.1 - - [12/Oct/2018 00:23:49] "POST /login HTTP/1.1" 200 -
+2018-10-12 00:23:49,501 werkzeug     INFO     127.0.0.1 - - [12/Oct/2018 00:23:49] "OPTIONS /getuserinfo?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1MzkyNzUwMzksImlhdCI6MTUzOTI3NTAyOSwiaXNzIjoia2VuIiwiZGF0YSI6eyJpZCI6MSwibG9naW5fdGltZSI6MTUzOTI3NTAyOX19.5nD-a3_EY8NS6JHT37wfh9Xd4IsgBB8ZVqxEMsRdRmU HTTP/1.1" 200 -
+2018-10-12 00:23:49,510 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2018-10-12 00:23:49,515 werkzeug     INFO     127.0.0.1 - - [12/Oct/2018 00:23:49] "GET /getuserinfo?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1MzkyNzUwMzksImlhdCI6MTUzOTI3NTAyOSwiaXNzIjoia2VuIiwiZGF0YSI6eyJpZCI6MSwibG9naW5fdGltZSI6MTUzOTI3NTAyOX19.5nD-a3_EY8NS6JHT37wfh9Xd4IsgBB8ZVqxEMsRdRmU HTTP/1.1" 200 -
+2018-10-12 00:23:52,913 werkzeug     INFO     127.0.0.1 - - [12/Oct/2018 00:23:52] "OPTIONS /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-12 00:23:52,925 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1`', [])
+2018-10-12 00:23:52,933 werkzeug     INFO     127.0.0.1 - - [12/Oct/2018 00:23:52] "GET /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-12 00:24:40,779 werkzeug     INFO     127.0.0.1 - - [12/Oct/2018 00:24:40] "OPTIONS /getuser?page=1&limit=20&username=admin&sort=%2Bid HTTP/1.1" 200 -
+2018-10-12 00:24:40,811 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1`', [])
+2018-10-12 00:24:40,816 werkzeug     INFO     127.0.0.1 - - [12/Oct/2018 00:24:40] "GET /getuser?page=1&limit=20&username=admin&sort=%2Bid HTTP/1.1" 200 -
+2018-10-12 00:27:38,665 werkzeug     INFO      * Detected change in '/Users/oliver/Flask-Apitest-Server/app/rest/usermanage.py', reloading
+2018-10-12 00:27:38,714 werkzeug     INFO      * Restarting with stat
+2018-10-12 00:27:39,015 werkzeug     WARNING   * Debugger is active!
+2018-10-12 00:27:39,027 werkzeug     INFO      * Debugger PIN: 339-093-568
+2018-10-12 00:27:45,514 werkzeug     INFO     127.0.0.1 - - [12/Oct/2018 00:27:45] "OPTIONS /getuser?page=1&limit=20&username=admin&sort=%2Bid HTTP/1.1" 200 -
+2018-10-12 00:27:45,542 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1`', [])
+2018-10-12 00:27:45,547 werkzeug     INFO     127.0.0.1 - - [12/Oct/2018 00:27:45] "GET /getuser?page=1&limit=20&username=admin&sort=%2Bid HTTP/1.1" 200 -
+2018-10-12 00:28:13,017 werkzeug     INFO     127.0.0.1 - - [12/Oct/2018 00:28:13] "OPTIONS /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-12 00:28:13,044 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1`', [])
+2018-10-12 00:28:13,052 werkzeug     INFO     127.0.0.1 - - [12/Oct/2018 00:28:13] "GET /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-12 00:29:27,506 werkzeug     INFO     127.0.0.1 - - [12/Oct/2018 00:29:27] "OPTIONS /getuserinfo?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1MzkyNzUwMzksImlhdCI6MTUzOTI3NTAyOSwiaXNzIjoia2VuIiwiZGF0YSI6eyJpZCI6MSwibG9naW5fdGltZSI6MTUzOTI3NTAyOX19.5nD-a3_EY8NS6JHT37wfh9Xd4IsgBB8ZVqxEMsRdRmU HTTP/1.1" 200 -
+2018-10-12 00:29:27,610 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2018-10-12 00:29:27,614 werkzeug     INFO     127.0.0.1 - - [12/Oct/2018 00:29:27] "GET /getuserinfo?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1MzkyNzUwMzksImlhdCI6MTUzOTI3NTAyOSwiaXNzIjoia2VuIiwiZGF0YSI6eyJpZCI6MSwibG9naW5fdGltZSI6MTUzOTI3NTAyOX19.5nD-a3_EY8NS6JHT37wfh9Xd4IsgBB8ZVqxEMsRdRmU HTTP/1.1" 200 -
+2018-10-12 00:29:30,912 werkzeug     INFO     127.0.0.1 - - [12/Oct/2018 00:29:30] "OPTIONS /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-12 00:29:30,948 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1`', [])
+2018-10-12 00:29:30,954 werkzeug     INFO     127.0.0.1 - - [12/Oct/2018 00:29:30] "GET /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-12 00:31:11,483 werkzeug     INFO     127.0.0.1 - - [12/Oct/2018 00:31:11] "OPTIONS /getuserinfo?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1MzkyNzUwMzksImlhdCI6MTUzOTI3NTAyOSwiaXNzIjoia2VuIiwiZGF0YSI6eyJpZCI6MSwibG9naW5fdGltZSI6MTUzOTI3NTAyOX19.5nD-a3_EY8NS6JHT37wfh9Xd4IsgBB8ZVqxEMsRdRmU HTTP/1.1" 200 -
+2018-10-12 00:31:11,662 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2018-10-12 00:31:11,666 werkzeug     INFO     127.0.0.1 - - [12/Oct/2018 00:31:11] "GET /getuserinfo?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1MzkyNzUwMzksImlhdCI6MTUzOTI3NTAyOSwiaXNzIjoia2VuIiwiZGF0YSI6eyJpZCI6MSwibG9naW5fdGltZSI6MTUzOTI3NTAyOX19.5nD-a3_EY8NS6JHT37wfh9Xd4IsgBB8ZVqxEMsRdRmU HTTP/1.1" 200 -
+2018-10-12 00:31:14,816 werkzeug     INFO     127.0.0.1 - - [12/Oct/2018 00:31:14] "OPTIONS /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-12 00:31:14,848 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1`', [])
+2018-10-12 00:31:14,856 werkzeug     INFO     127.0.0.1 - - [12/Oct/2018 00:31:14] "GET /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-12 00:32:35,574 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1`', [])
+2018-10-12 00:32:35,579 werkzeug     INFO     127.0.0.1 - - [12/Oct/2018 00:32:35] "GET /getuser?username=admin HTTP/1.1" 200 -
+2018-10-12 00:33:37,813 werkzeug     INFO      * Detected change in '/Users/oliver/Flask-Apitest-Server/app/rest/usermanage.py', reloading
+2018-10-12 00:33:37,884 werkzeug     INFO      * Restarting with stat
+2018-10-12 00:33:38,406 werkzeug     WARNING   * Debugger is active!
+2018-10-12 00:33:38,420 werkzeug     INFO      * Debugger PIN: 339-093-568
+2018-10-12 00:33:41,554 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1`', [])
+2018-10-12 00:33:41,564 werkzeug     INFO     127.0.0.1 - - [12/Oct/2018 00:33:41] "GET /getuser?username=admin HTTP/1.1" 200 -
+2018-10-12 00:34:35,692 werkzeug     INFO     127.0.0.1 - - [12/Oct/2018 00:34:35] "OPTIONS /getuserinfo?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1MzkyNzUwMzksImlhdCI6MTUzOTI3NTAyOSwiaXNzIjoia2VuIiwiZGF0YSI6eyJpZCI6MSwibG9naW5fdGltZSI6MTUzOTI3NTAyOX19.5nD-a3_EY8NS6JHT37wfh9Xd4IsgBB8ZVqxEMsRdRmU HTTP/1.1" 200 -
+2018-10-12 00:34:35,704 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2018-10-12 00:34:35,711 werkzeug     INFO     127.0.0.1 - - [12/Oct/2018 00:34:35] "GET /getuserinfo?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1MzkyNzUwMzksImlhdCI6MTUzOTI3NTAyOSwiaXNzIjoia2VuIiwiZGF0YSI6eyJpZCI6MSwibG9naW5fdGltZSI6MTUzOTI3NTAyOX19.5nD-a3_EY8NS6JHT37wfh9Xd4IsgBB8ZVqxEMsRdRmU HTTP/1.1" 200 -
+2018-10-12 00:34:35,998 werkzeug     INFO     127.0.0.1 - - [12/Oct/2018 00:34:35] "OPTIONS /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-12 00:34:36,014 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1`', [])
+2018-10-12 00:34:36,025 werkzeug     INFO     127.0.0.1 - - [12/Oct/2018 00:34:36] "GET /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-12 00:39:13,048 werkzeug     INFO     127.0.0.1 - - [12/Oct/2018 00:39:13] "OPTIONS /getuser?page=1&limit=20&username=admin&sort=%2Bid HTTP/1.1" 200 -
+2018-10-12 00:39:13,082 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1`', [])
+2018-10-12 00:39:13,091 werkzeug     INFO     127.0.0.1 - - [12/Oct/2018 00:39:13] "GET /getuser?page=1&limit=20&username=admin&sort=%2Bid HTTP/1.1" 200 -
+2018-10-12 00:40:24,743 werkzeug     INFO     127.0.0.1 - - [12/Oct/2018 00:40:24] "OPTIONS /getuser?page=1&limit=20 HTTP/1.1" 200 -
+2018-10-12 00:40:24,756 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1`', [])
+2018-10-12 00:40:24,761 werkzeug     INFO     127.0.0.1 - - [12/Oct/2018 00:40:24] "GET /getuser?page=1&limit=20 HTTP/1.1" 200 -
+2018-10-12 00:41:16,664 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1`', [])
+2018-10-12 00:41:16,670 werkzeug     INFO     127.0.0.1 - - [12/Oct/2018 00:41:16] "GET /getuser?admin HTTP/1.1" 200 -
+2018-10-12 00:41:32,910 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` WHERE (`t1`.`username` = %s)', ['admin'])
+2018-10-12 00:41:32,917 werkzeug     INFO     127.0.0.1 - - [12/Oct/2018 00:41:32] "GET /getuser/admin HTTP/1.1" 200 -
+2018-10-12 00:42:59,363 werkzeug     INFO      * Detected change in '/Users/oliver/Flask-Apitest-Server/app/rest/usermanage.py', reloading
+2018-10-12 00:42:59,430 werkzeug     INFO      * Restarting with stat
+2018-10-12 00:42:59,864 werkzeug     WARNING   * Debugger is active!
+2018-10-12 00:42:59,872 werkzeug     INFO      * Debugger PIN: 339-093-568
+2018-10-12 00:43:36,361 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1`', [])
+2018-10-12 00:43:36,367 werkzeug     INFO     127.0.0.1 - - [12/Oct/2018 00:43:36] "GET /getuser?username=admin HTTP/1.1" 200 -
+2018-10-12 23:10:32,787 werkzeug     INFO      * Detected change in '/Users/oliver/Flask-Apitest-Server/app/rest/usermanage.py', reloading
+2018-10-12 23:10:32,901 werkzeug     INFO      * Restarting with stat
+2018-10-12 23:10:33,279 werkzeug     WARNING   * Debugger is active!
+2018-10-12 23:10:33,291 werkzeug     INFO      * Debugger PIN: 339-093-568
+2018-10-12 23:10:45,437 werkzeug     INFO     127.0.0.1 - - [12/Oct/2018 23:10:45] "OPTIONS /getuser?page=1&limit=20 HTTP/1.1" 200 -
+2018-10-12 23:10:45,450 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1`', [])
+2018-10-12 23:10:45,541 werkzeug     INFO     127.0.0.1 - - [12/Oct/2018 23:10:45] "GET /getuser?page=1&limit=20 HTTP/1.1" 200 -
+2018-10-12 23:11:34,101 werkzeug     INFO      * Detected change in '/Users/oliver/Flask-Apitest-Server/app/rest/usermanage.py', reloading
+2018-10-12 23:11:34,149 werkzeug     INFO      * Restarting with stat
+2018-10-12 23:11:34,556 werkzeug     WARNING   * Debugger is active!
+2018-10-12 23:11:34,563 werkzeug     INFO      * Debugger PIN: 339-093-568
+2018-10-12 23:11:40,454 werkzeug     INFO     127.0.0.1 - - [12/Oct/2018 23:11:40] "OPTIONS /getuserinfo?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1MzkyNzUwMzksImlhdCI6MTUzOTI3NTAyOSwiaXNzIjoia2VuIiwiZGF0YSI6eyJpZCI6MSwibG9naW5fdGltZSI6MTUzOTI3NTAyOX19.5nD-a3_EY8NS6JHT37wfh9Xd4IsgBB8ZVqxEMsRdRmU HTTP/1.1" 200 -
+2018-10-12 23:11:40,470 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2018-10-12 23:11:40,492 werkzeug     INFO     127.0.0.1 - - [12/Oct/2018 23:11:40] "GET /getuserinfo?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1MzkyNzUwMzksImlhdCI6MTUzOTI3NTAyOSwiaXNzIjoia2VuIiwiZGF0YSI6eyJpZCI6MSwibG9naW5fdGltZSI6MTUzOTI3NTAyOX19.5nD-a3_EY8NS6JHT37wfh9Xd4IsgBB8ZVqxEMsRdRmU HTTP/1.1" 200 -
+2018-10-12 23:11:44,216 werkzeug     INFO     127.0.0.1 - - [12/Oct/2018 23:11:44] "OPTIONS /getuser?page=1&limit=20 HTTP/1.1" 200 -
+2018-10-12 23:11:44,226 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1`', [])
+2018-10-12 23:11:44,232 werkzeug     INFO     127.0.0.1 - - [12/Oct/2018 23:11:44] "GET /getuser?page=1&limit=20 HTTP/1.1" 200 -
+2018-10-12 23:12:11,180 werkzeug     INFO      * Detected change in '/Users/oliver/Flask-Apitest-Server/app/rest/usermanage.py', reloading
+2018-10-12 23:12:11,230 werkzeug     INFO      * Restarting with stat
+2018-10-12 23:12:11,762 werkzeug     WARNING   * Debugger is active!
+2018-10-12 23:12:11,777 werkzeug     INFO      * Debugger PIN: 339-093-568
+2018-10-12 23:20:36,531 werkzeug     INFO      * Detected change in '/Users/oliver/Flask-Apitest-Server/app/rest/usermanage.py', reloading
+2018-10-12 23:20:36,598 werkzeug     INFO      * Restarting with stat
+2018-10-12 23:20:37,027 werkzeug     WARNING   * Debugger is active!
+2018-10-12 23:20:37,035 werkzeug     INFO      * Debugger PIN: 339-093-568
+2018-10-12 23:20:41,970 werkzeug     INFO     127.0.0.1 - - [12/Oct/2018 23:20:41] "OPTIONS /getuser?page=1&limit=20&status=%E5%90%AF%E7%94%A8 HTTP/1.1" 200 -
+2018-10-12 23:20:42,024 werkzeug     INFO     127.0.0.1 - - [12/Oct/2018 23:20:42] "GET /getuser?page=1&limit=20&status=%E5%90%AF%E7%94%A8 HTTP/1.1" 500 -
+2018-10-12 23:21:17,594 werkzeug     INFO      * Detected change in '/Users/oliver/Flask-Apitest-Server/app/rest/usermanage.py', reloading
+2018-10-12 23:21:17,649 werkzeug     INFO      * Restarting with stat
+2018-10-12 23:21:18,027 werkzeug     WARNING   * Debugger is active!
+2018-10-12 23:21:18,035 werkzeug     INFO      * Debugger PIN: 339-093-568
+2018-10-12 23:21:20,605 werkzeug     INFO     127.0.0.1 - - [12/Oct/2018 23:21:20] "OPTIONS /getuser?page=1&limit=20&status=%E5%90%AF%E7%94%A8 HTTP/1.1" 200 -
+2018-10-12 23:21:20,633 werkzeug     INFO     127.0.0.1 - - [12/Oct/2018 23:21:20] "GET /getuser?page=1&limit=20&status=%E5%90%AF%E7%94%A8 HTTP/1.1" 500 -
+2018-10-12 23:22:14,792 werkzeug     INFO      * Detected change in '/Users/oliver/Flask-Apitest-Server/app/rest/usermanage.py', reloading
+2018-10-12 23:22:14,845 werkzeug     INFO      * Restarting with stat
+2018-10-12 23:22:15,251 werkzeug     WARNING   * Debugger is active!
+2018-10-12 23:22:15,259 werkzeug     INFO      * Debugger PIN: 339-093-568
+2018-10-12 23:22:24,427 werkzeug     INFO      * Detected change in '/Users/oliver/Flask-Apitest-Server/app/rest/usermanage.py', reloading
+2018-10-12 23:22:24,548 werkzeug     INFO      * Restarting with stat
+2018-10-12 23:22:25,174 werkzeug     WARNING   * Debugger is active!
+2018-10-12 23:22:25,188 werkzeug     INFO      * Debugger PIN: 339-093-568
+2018-10-12 23:22:25,644 werkzeug     INFO     127.0.0.1 - - [12/Oct/2018 23:22:25] "OPTIONS /getuser?page=1&limit=20&status=%E5%90%AF%E7%94%A8 HTTP/1.1" 200 -
+2018-10-12 23:22:25,648 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1`', [])
+2018-10-12 23:22:25,658 werkzeug     INFO     127.0.0.1 - - [12/Oct/2018 23:22:25] "GET /getuser?page=1&limit=20&status=%E5%90%AF%E7%94%A8 HTTP/1.1" 200 -
+2018-10-12 23:26:12,131 werkzeug     INFO      * Detected change in '/Users/oliver/Flask-Apitest-Server/app/rest/usermanage.py', reloading
+2018-10-12 23:26:12,186 werkzeug     INFO      * Restarting with stat
+2018-10-12 23:26:12,607 werkzeug     WARNING   * Debugger is active!
+2018-10-12 23:26:12,616 werkzeug     INFO      * Debugger PIN: 339-093-568
+2018-10-12 23:26:19,621 werkzeug     INFO     127.0.0.1 - - [12/Oct/2018 23:26:19] "OPTIONS /getuser?page=1&limit=20&status=%E5%90%AF%E7%94%A8 HTTP/1.1" 200 -
+2018-10-12 23:26:19,648 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1`', [])
+2018-10-12 23:26:19,656 werkzeug     INFO     127.0.0.1 - - [12/Oct/2018 23:26:19] "GET /getuser?page=1&limit=20&status=%E5%90%AF%E7%94%A8 HTTP/1.1" 200 -
+2018-10-12 23:26:28,536 werkzeug     INFO     127.0.0.1 - - [12/Oct/2018 23:26:28] "OPTIONS /getuser?page=1&limit=20 HTTP/1.1" 200 -
+2018-10-12 23:26:28,547 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1`', [])
+2018-10-12 23:26:28,554 werkzeug     INFO     127.0.0.1 - - [12/Oct/2018 23:26:28] "GET /getuser?page=1&limit=20 HTTP/1.1" 200 -
+2018-10-12 23:36:38,892 werkzeug     INFO      * Detected change in '/Users/oliver/Flask-Apitest-Server/app/rest/usermanage.py', reloading
+2018-10-12 23:36:38,950 werkzeug     INFO      * Restarting with stat
+2018-10-12 23:36:39,344 werkzeug     WARNING   * Debugger is active!
+2018-10-12 23:36:39,352 werkzeug     INFO      * Debugger PIN: 339-093-568
+2018-10-12 23:37:04,703 werkzeug     INFO      * Detected change in '/Users/oliver/Flask-Apitest-Server/app/rest/usermanage.py', reloading
+2018-10-12 23:37:04,753 werkzeug     INFO      * Restarting with stat
+2018-10-12 23:37:05,139 werkzeug     WARNING   * Debugger is active!
+2018-10-12 23:37:05,147 werkzeug     INFO      * Debugger PIN: 339-093-568
+2018-10-12 23:38:30,293 werkzeug     INFO      * Detected change in '/Users/oliver/Flask-Apitest-Server/app/rest/usermanage.py', reloading
+2018-10-12 23:38:30,344 werkzeug     INFO      * Restarting with stat
+2018-10-12 23:38:30,607 werkzeug     WARNING   * Debugger is active!
+2018-10-12 23:38:30,614 werkzeug     INFO      * Debugger PIN: 339-093-568
+2018-10-12 23:39:10,154 werkzeug     INFO      * Detected change in '/Users/oliver/Flask-Apitest-Server/app/rest/usermanage.py', reloading
+2018-10-12 23:39:10,202 werkzeug     INFO      * Restarting with stat
+2018-10-12 23:39:10,453 werkzeug     WARNING   * Debugger is active!
+2018-10-12 23:39:10,460 werkzeug     INFO      * Debugger PIN: 339-093-568
+2018-10-12 23:39:21,079 werkzeug     INFO     127.0.0.1 - - [12/Oct/2018 23:39:21] "OPTIONS /getuser?page=1&limit=20 HTTP/1.1" 200 -
+2018-10-12 23:39:21,092 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1`', [])
+2018-10-12 23:39:21,099 werkzeug     INFO     127.0.0.1 - - [12/Oct/2018 23:39:21] "GET /getuser?page=1&limit=20 HTTP/1.1" 200 -
+2018-10-12 23:40:02,176 werkzeug     INFO      * Detected change in '/Users/oliver/Flask-Apitest-Server/app/rest/usermanage.py', reloading
+2018-10-12 23:40:02,228 werkzeug     INFO      * Restarting with stat
+2018-10-12 23:40:02,621 werkzeug     WARNING   * Debugger is active!
+2018-10-12 23:40:02,629 werkzeug     INFO      * Debugger PIN: 339-093-568
+2018-10-12 23:40:07,332 werkzeug     INFO     127.0.0.1 - - [12/Oct/2018 23:40:07] "OPTIONS /getuser?page=1&limit=20 HTTP/1.1" 200 -
+2018-10-12 23:40:07,344 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1`', [])
+2018-10-12 23:40:07,350 werkzeug     INFO     127.0.0.1 - - [12/Oct/2018 23:40:07] "GET /getuser?page=1&limit=20 HTTP/1.1" 200 -
+2018-10-12 23:40:53,365 werkzeug     INFO      * Detected change in '/Users/oliver/Flask-Apitest-Server/app/rest/usermanage.py', reloading
+2018-10-12 23:40:53,418 werkzeug     INFO      * Restarting with stat
+2018-10-12 23:40:53,681 werkzeug     WARNING   * Debugger is active!
+2018-10-12 23:40:53,687 werkzeug     INFO      * Debugger PIN: 339-093-568
+2018-10-12 23:40:59,187 werkzeug     INFO     127.0.0.1 - - [12/Oct/2018 23:40:59] "OPTIONS /getuser?page=1&limit=20 HTTP/1.1" 200 -
+2018-10-12 23:40:59,198 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1`', [])
+2018-10-12 23:40:59,206 werkzeug     INFO     127.0.0.1 - - [12/Oct/2018 23:40:59] "GET /getuser?page=1&limit=20 HTTP/1.1" 200 -
+2018-10-12 23:41:15,005 werkzeug     INFO      * Detected change in '/Users/oliver/Flask-Apitest-Server/app/rest/usermanage.py', reloading
+2018-10-12 23:41:15,053 werkzeug     INFO      * Restarting with stat
+2018-10-12 23:41:15,303 werkzeug     WARNING   * Debugger is active!
+2018-10-12 23:41:15,310 werkzeug     INFO      * Debugger PIN: 339-093-568
+2018-10-13 21:40:22,801 werkzeug     INFO     127.0.0.1 - - [13/Oct/2018 21:40:22] "OPTIONS /login HTTP/1.1" 200 -
+2018-10-13 21:40:22,837 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` WHERE (`t1`.`username` = %s) LIMIT %s OFFSET %s', ['admin', 1, 0])
+2018-10-13 21:40:23,073 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` WHERE (`t1`.`username` = %s) LIMIT %s OFFSET %s', ['admin', 1, 0])
+2018-10-13 21:40:23,199 werkzeug     INFO     127.0.0.1 - - [13/Oct/2018 21:40:23] "POST /login HTTP/1.1" 200 -
+2018-10-13 21:40:23,213 werkzeug     INFO     127.0.0.1 - - [13/Oct/2018 21:40:23] "OPTIONS /getuserinfo?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1Mzk0MzgwMzMsImlhdCI6MTUzOTQzODAyMywiaXNzIjoia2VuIiwiZGF0YSI6eyJpZCI6MSwibG9naW5fdGltZSI6MTUzOTQzODAyM319.h9rUC0HjvWfM2iwEFdecmr6bv08y20Xk6zV9jO5HEV0 HTTP/1.1" 200 -
+2018-10-13 21:40:23,220 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2018-10-13 21:40:23,229 werkzeug     INFO     127.0.0.1 - - [13/Oct/2018 21:40:23] "GET /getuserinfo?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1Mzk0MzgwMzMsImlhdCI6MTUzOTQzODAyMywiaXNzIjoia2VuIiwiZGF0YSI6eyJpZCI6MSwibG9naW5fdGltZSI6MTUzOTQzODAyM319.h9rUC0HjvWfM2iwEFdecmr6bv08y20Xk6zV9jO5HEV0 HTTP/1.1" 200 -
+2018-10-13 21:47:01,148 werkzeug     INFO     127.0.0.1 - - [13/Oct/2018 21:47:01] "OPTIONS /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-13 21:47:01,159 werkzeug     INFO     127.0.0.1 - - [13/Oct/2018 21:47:01] "GET /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-13 21:47:13,294 werkzeug     INFO     127.0.0.1 - - [13/Oct/2018 21:47:13] "OPTIONS /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-13 21:47:13,311 werkzeug     INFO     127.0.0.1 - - [13/Oct/2018 21:47:13] "GET /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-13 21:51:04,992 werkzeug     INFO     127.0.0.1 - - [13/Oct/2018 21:51:04] "OPTIONS /getuserinfo?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1Mzk0MzgwMzMsImlhdCI6MTUzOTQzODAyMywiaXNzIjoia2VuIiwiZGF0YSI6eyJpZCI6MSwibG9naW5fdGltZSI6MTUzOTQzODAyM319.h9rUC0HjvWfM2iwEFdecmr6bv08y20Xk6zV9jO5HEV0 HTTP/1.1" 200 -
+2018-10-13 21:51:05,004 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2018-10-13 21:51:05,018 werkzeug     INFO     127.0.0.1 - - [13/Oct/2018 21:51:05] "GET /getuserinfo?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1Mzk0MzgwMzMsImlhdCI6MTUzOTQzODAyMywiaXNzIjoia2VuIiwiZGF0YSI6eyJpZCI6MSwibG9naW5fdGltZSI6MTUzOTQzODAyM319.h9rUC0HjvWfM2iwEFdecmr6bv08y20Xk6zV9jO5HEV0 HTTP/1.1" 200 -
+2018-10-13 21:51:05,304 werkzeug     INFO     127.0.0.1 - - [13/Oct/2018 21:51:05] "OPTIONS /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-13 21:51:05,320 werkzeug     INFO     127.0.0.1 - - [13/Oct/2018 21:51:05] "GET /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-13 21:58:49,237 werkzeug     INFO     127.0.0.1 - - [13/Oct/2018 21:58:49] "OPTIONS /login HTTP/1.1" 200 -
+2018-10-13 21:58:49,285 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` WHERE (`t1`.`username` = %s) LIMIT %s OFFSET %s', ['admin', 1, 0])
+2018-10-13 21:58:49,415 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` WHERE (`t1`.`username` = %s) LIMIT %s OFFSET %s', ['admin', 1, 0])
+2018-10-13 21:58:49,537 werkzeug     INFO     127.0.0.1 - - [13/Oct/2018 21:58:49] "POST /login HTTP/1.1" 200 -
+2018-10-13 21:58:49,550 werkzeug     INFO     127.0.0.1 - - [13/Oct/2018 21:58:49] "OPTIONS /getuserinfo?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1Mzk0MzkxMzksImlhdCI6MTUzOTQzOTEyOSwiaXNzIjoia2VuIiwiZGF0YSI6eyJpZCI6MSwibG9naW5fdGltZSI6MTUzOTQzOTEyOX19.WW0DXbJ8IImKWSVXGD0YD2iT88FdaS126moEq_wMa0o HTTP/1.1" 200 -
+2018-10-13 21:58:49,557 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2018-10-13 21:58:49,561 werkzeug     INFO     127.0.0.1 - - [13/Oct/2018 21:58:49] "GET /getuserinfo?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1Mzk0MzkxMzksImlhdCI6MTUzOTQzOTEyOSwiaXNzIjoia2VuIiwiZGF0YSI6eyJpZCI6MSwibG9naW5fdGltZSI6MTUzOTQzOTEyOX19.WW0DXbJ8IImKWSVXGD0YD2iT88FdaS126moEq_wMa0o HTTP/1.1" 200 -
+2018-10-13 22:01:42,500 werkzeug     INFO     127.0.0.1 - - [13/Oct/2018 22:01:42] "OPTIONS /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-13 22:01:42,512 werkzeug     INFO     127.0.0.1 - - [13/Oct/2018 22:01:42] "GET /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-13 22:03:33,126 werkzeug     INFO     127.0.0.1 - - [13/Oct/2018 22:03:33] "OPTIONS /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-13 22:03:33,142 werkzeug     INFO     127.0.0.1 - - [13/Oct/2018 22:03:33] "GET /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-13 22:05:33,570 werkzeug     INFO      * Detected change in '/Users/oliver/Flask-Apitest-Server/app/rest/usermanage.py', reloading
+2018-10-13 22:05:33,657 werkzeug     INFO      * Restarting with stat
+2018-10-13 22:05:34,102 werkzeug     WARNING   * Debugger is active!
+2018-10-13 22:05:34,112 werkzeug     INFO      * Debugger PIN: 339-093-568
+2018-10-13 22:06:03,764 werkzeug     INFO     127.0.0.1 - - [13/Oct/2018 22:06:03] "OPTIONS /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-13 22:06:03,787 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1`', [])
+2018-10-13 22:06:03,803 werkzeug     INFO     127.0.0.1 - - [13/Oct/2018 22:06:03] "GET /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-13 22:06:52,236 werkzeug     INFO      * Detected change in '/Users/oliver/Flask-Apitest-Server/app/rest/usermanage.py', reloading
+2018-10-13 22:06:52,282 werkzeug     INFO      * Restarting with stat
+2018-10-13 22:06:52,827 werkzeug     WARNING   * Debugger is active!
+2018-10-13 22:06:52,835 werkzeug     INFO      * Debugger PIN: 339-093-568
+2018-10-13 22:08:51,161 werkzeug     INFO     127.0.0.1 - - [13/Oct/2018 22:08:51] "OPTIONS /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-13 22:08:51,177 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1`', [])
+2018-10-13 22:08:51,186 werkzeug     INFO     127.0.0.1 - - [13/Oct/2018 22:08:51] "GET /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-13 22:15:17,492 werkzeug     INFO      * Detected change in '/Users/oliver/Flask-Apitest-Server/app/rest/usermanage.py', reloading
+2018-10-13 22:15:17,554 werkzeug     INFO      * Restarting with stat
+2018-10-13 22:15:17,965 werkzeug     WARNING   * Debugger is active!
+2018-10-13 22:15:17,981 werkzeug     INFO      * Debugger PIN: 339-093-568
+2018-10-13 22:20:10,770 werkzeug     INFO      * Detected change in '/Users/oliver/Flask-Apitest-Server/app/rest/usermanage.py', reloading
+2018-10-13 22:20:10,838 werkzeug     INFO      * Restarting with stat
+2018-10-13 22:20:11,275 werkzeug     WARNING   * Debugger is active!
+2018-10-13 22:20:11,285 werkzeug     INFO      * Debugger PIN: 339-093-568
+2018-10-13 22:20:47,812 werkzeug     INFO      * Detected change in '/Users/oliver/Flask-Apitest-Server/app/rest/usermanage.py', reloading
+2018-10-13 22:20:47,866 werkzeug     INFO      * Restarting with stat
+2018-10-13 22:20:48,311 werkzeug     WARNING   * Debugger is active!
+2018-10-13 22:20:48,319 werkzeug     INFO      * Debugger PIN: 339-093-568
+2018-10-13 22:21:04,562 werkzeug     INFO      * Detected change in '/Users/oliver/Flask-Apitest-Server/app/rest/usermanage.py', reloading
+2018-10-13 22:21:04,616 werkzeug     INFO      * Restarting with stat
+2018-10-13 22:21:05,060 werkzeug     WARNING   * Debugger is active!
+2018-10-13 22:21:05,069 werkzeug     INFO      * Debugger PIN: 339-093-568
+2018-10-13 22:28:47,141 werkzeug     INFO      * Detected change in '/Users/oliver/Flask-Apitest-Server/app/rest/usermanage.py', reloading
+2018-10-13 22:28:47,227 werkzeug     INFO      * Restarting with stat
+2018-10-13 22:28:47,690 werkzeug     WARNING   * Debugger is active!
+2018-10-13 22:28:47,701 werkzeug     INFO      * Debugger PIN: 339-093-568
+2018-10-13 22:28:53,659 werkzeug     INFO     127.0.0.1 - - [13/Oct/2018 22:28:53] "OPTIONS /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-13 22:28:53,679 peewee       DEBUG    ('SELECT COUNT(1) FROM (SELECT 1 FROM `user` AS `t1`) AS `_wrapped`', [])
+2018-10-13 22:28:53,695 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` ORDER BY `t1`.`id` LIMIT %s OFFSET %s', [20, 0])
+2018-10-13 22:28:53,703 werkzeug     INFO     127.0.0.1 - - [13/Oct/2018 22:28:53] "GET /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-13 22:29:07,296 werkzeug     INFO     127.0.0.1 - - [13/Oct/2018 22:29:07] "OPTIONS /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-13 22:29:07,315 peewee       DEBUG    ('SELECT COUNT(1) FROM (SELECT 1 FROM `user` AS `t1`) AS `_wrapped`', [])
+2018-10-13 22:29:07,326 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` ORDER BY `t1`.`id` LIMIT %s OFFSET %s', [20, 0])
+2018-10-13 22:29:07,336 werkzeug     INFO     127.0.0.1 - - [13/Oct/2018 22:29:07] "GET /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-13 22:30:47,379 werkzeug     INFO      * Detected change in '/Users/oliver/Flask-Apitest-Server/app/rest/usermanage.py', reloading
+2018-10-13 22:30:47,443 werkzeug     INFO      * Restarting with stat
+2018-10-13 22:30:47,841 werkzeug     WARNING   * Debugger is active!
+2018-10-13 22:30:47,848 werkzeug     INFO      * Debugger PIN: 339-093-568
+2018-10-13 22:30:51,489 werkzeug     INFO     127.0.0.1 - - [13/Oct/2018 22:30:51] "OPTIONS /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-13 22:30:51,506 peewee       DEBUG    ('SELECT COUNT(1) FROM (SELECT 1 FROM `user` AS `t1`) AS `_wrapped`', [])
+2018-10-13 22:30:51,513 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` ORDER BY `t1`.`id` LIMIT %s OFFSET %s', [20, 0])
+2018-10-13 22:30:51,518 werkzeug     INFO     127.0.0.1 - - [13/Oct/2018 22:30:51] "GET /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-13 22:31:35,569 werkzeug     INFO      * Detected change in '/Users/oliver/Flask-Apitest-Server/app/rest/usermanage.py', reloading
+2018-10-13 22:31:35,631 werkzeug     INFO      * Restarting with stat
+2018-10-13 22:31:36,061 werkzeug     WARNING   * Debugger is active!
+2018-10-13 22:31:36,069 werkzeug     INFO      * Debugger PIN: 339-093-568
+2018-10-13 22:32:12,751 werkzeug     INFO     127.0.0.1 - - [13/Oct/2018 22:32:12] "OPTIONS /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-13 22:32:12,788 peewee       DEBUG    ('SELECT COUNT(1) FROM (SELECT 1 FROM `user` AS `t1`) AS `_wrapped`', [])
+2018-10-13 22:32:12,795 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` ORDER BY `t1`.`id` LIMIT %s OFFSET %s', [20, 0])
+2018-10-13 22:32:12,806 werkzeug     INFO     127.0.0.1 - - [13/Oct/2018 22:32:12] "GET /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-13 22:32:31,115 werkzeug     INFO     127.0.0.1 - - [13/Oct/2018 22:32:31] "OPTIONS /getuser?page=1&limit=20&sort=%2Bid&userrole=%E7%AE%A1%E7%90%86%E5%91%98 HTTP/1.1" 200 -
+2018-10-13 22:32:31,193 peewee       DEBUG    ('SELECT COUNT(1) FROM (SELECT 1 FROM `user` AS `t1`) AS `_wrapped`', [])
+2018-10-13 22:32:31,204 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` ORDER BY `t1`.`id` LIMIT %s OFFSET %s', [20, 0])
+2018-10-13 22:32:31,220 werkzeug     INFO     127.0.0.1 - - [13/Oct/2018 22:32:31] "GET /getuser?page=1&limit=20&sort=%2Bid&userrole=%E7%AE%A1%E7%90%86%E5%91%98 HTTP/1.1" 200 -
+2018-10-13 22:32:38,927 werkzeug     INFO     127.0.0.1 - - [13/Oct/2018 22:32:38] "OPTIONS /getuser?page=1&limit=20&sort=%2Bid&userrole=%E7%AE%A1%E7%90%86%E5%91%98 HTTP/1.1" 200 -
+2018-10-13 22:32:38,987 peewee       DEBUG    ('SELECT COUNT(1) FROM (SELECT 1 FROM `user` AS `t1`) AS `_wrapped`', [])
+2018-10-13 22:32:39,001 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` ORDER BY `t1`.`id` LIMIT %s OFFSET %s', [20, 0])
+2018-10-13 22:32:39,011 werkzeug     INFO     127.0.0.1 - - [13/Oct/2018 22:32:39] "GET /getuser?page=1&limit=20&sort=%2Bid&userrole=%E7%AE%A1%E7%90%86%E5%91%98 HTTP/1.1" 200 -
+2018-10-13 22:35:59,037 werkzeug     INFO     127.0.0.1 - - [13/Oct/2018 22:35:59] "OPTIONS /getuser?page=1&limit=20&username=admin&sort=%2Bid&userrole= HTTP/1.1" 200 -
+2018-10-13 22:35:59,062 peewee       DEBUG    ('SELECT COUNT(1) FROM (SELECT 1 FROM `user` AS `t1`) AS `_wrapped`', [])
+2018-10-13 22:35:59,076 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` ORDER BY `t1`.`id` LIMIT %s OFFSET %s', [20, 0])
+2018-10-13 22:35:59,085 werkzeug     INFO     127.0.0.1 - - [13/Oct/2018 22:35:59] "GET /getuser?page=1&limit=20&username=admin&sort=%2Bid&userrole= HTTP/1.1" 200 -
+2018-10-13 22:36:15,221 werkzeug     INFO     127.0.0.1 - - [13/Oct/2018 22:36:15] "OPTIONS /getuser?page=1&limit=20&username=admin&sort=%2Bid&userrole= HTTP/1.1" 200 -
+2018-10-13 22:36:15,288 peewee       DEBUG    ('SELECT COUNT(1) FROM (SELECT 1 FROM `user` AS `t1`) AS `_wrapped`', [])
+2018-10-13 22:36:15,294 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` ORDER BY `t1`.`id` LIMIT %s OFFSET %s', [20, 0])
+2018-10-13 22:36:15,298 werkzeug     INFO     127.0.0.1 - - [13/Oct/2018 22:36:15] "GET /getuser?page=1&limit=20&username=admin&sort=%2Bid&userrole= HTTP/1.1" 200 -
+2018-10-13 22:41:59,895 werkzeug     INFO      * Detected change in '/Users/oliver/Flask-Apitest-Server/app/rest/usermanage.py', reloading
+2018-10-13 22:41:59,974 werkzeug     INFO      * Restarting with stat
+2018-10-13 22:43:38,959 werkzeug     INFO      * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2018-10-13 22:43:38,964 werkzeug     INFO      * Restarting with stat
+2018-10-13 22:43:39,220 werkzeug     WARNING   * Debugger is active!
+2018-10-13 22:43:39,230 werkzeug     INFO      * Debugger PIN: 339-093-568
+2018-10-13 22:43:46,501 werkzeug     INFO     127.0.0.1 - - [13/Oct/2018 22:43:46] "OPTIONS /getuser?page=1&limit=20&username=admin&sort=%2Bid&userrole= HTTP/1.1" 200 -
+2018-10-13 22:43:46,635 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` WHERE (`t1`.`username` = %s)', ['admin'])
+2018-10-13 22:43:46,659 werkzeug     INFO     127.0.0.1 - - [13/Oct/2018 22:43:46] "GET /getuser?page=1&limit=20&username=admin&sort=%2Bid&userrole= HTTP/1.1" 200 -
+2018-10-13 22:43:52,148 werkzeug     INFO     127.0.0.1 - - [13/Oct/2018 22:43:52] "OPTIONS /getuser?page=1&limit=20&username=&sort=%2Bid&userrole= HTTP/1.1" 200 -
+2018-10-13 22:43:52,160 peewee       DEBUG    ('SELECT COUNT(1) FROM (SELECT 1 FROM `user` AS `t1`) AS `_wrapped`', [])
+2018-10-13 22:43:52,165 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` ORDER BY `t1`.`id` LIMIT %s OFFSET %s', [20, 0])
+2018-10-13 22:43:52,168 werkzeug     INFO     127.0.0.1 - - [13/Oct/2018 22:43:52] "GET /getuser?page=1&limit=20&username=&sort=%2Bid&userrole= HTTP/1.1" 200 -
+2018-10-13 22:43:56,367 werkzeug     INFO     127.0.0.1 - - [13/Oct/2018 22:43:56] "OPTIONS /getuser?page=1&limit=20&username=test&sort=%2Bid&userrole= HTTP/1.1" 200 -
+2018-10-13 22:43:56,389 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` WHERE (`t1`.`username` = %s)', ['test'])
+2018-10-13 22:43:56,398 werkzeug     INFO     127.0.0.1 - - [13/Oct/2018 22:43:56] "GET /getuser?page=1&limit=20&username=test&sort=%2Bid&userrole= HTTP/1.1" 200 -
+2018-10-13 22:44:41,811 werkzeug     INFO     127.0.0.1 - - [13/Oct/2018 22:44:41] "OPTIONS /getuserinfo?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1Mzk0MzkxMzksImlhdCI6MTUzOTQzOTEyOSwiaXNzIjoia2VuIiwiZGF0YSI6eyJpZCI6MSwibG9naW5fdGltZSI6MTUzOTQzOTEyOX19.WW0DXbJ8IImKWSVXGD0YD2iT88FdaS126moEq_wMa0o HTTP/1.1" 200 -
+2018-10-13 22:44:41,828 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2018-10-13 22:44:41,837 werkzeug     INFO     127.0.0.1 - - [13/Oct/2018 22:44:41] "GET /getuserinfo?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1Mzk0MzkxMzksImlhdCI6MTUzOTQzOTEyOSwiaXNzIjoia2VuIiwiZGF0YSI6eyJpZCI6MSwibG9naW5fdGltZSI6MTUzOTQzOTEyOX19.WW0DXbJ8IImKWSVXGD0YD2iT88FdaS126moEq_wMa0o HTTP/1.1" 200 -
+2018-10-13 22:44:45,058 werkzeug     INFO     127.0.0.1 - - [13/Oct/2018 22:44:45] "OPTIONS /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-13 22:44:45,072 peewee       DEBUG    ('SELECT COUNT(1) FROM (SELECT 1 FROM `user` AS `t1`) AS `_wrapped`', [])
+2018-10-13 22:44:45,079 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` ORDER BY `t1`.`id` LIMIT %s OFFSET %s', [20, 0])
+2018-10-13 22:44:45,083 werkzeug     INFO     127.0.0.1 - - [13/Oct/2018 22:44:45] "GET /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-13 22:46:24,504 werkzeug     INFO     127.0.0.1 - - [13/Oct/2018 22:46:24] "OPTIONS /getuserinfo?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1Mzk0MzkxMzksImlhdCI6MTUzOTQzOTEyOSwiaXNzIjoia2VuIiwiZGF0YSI6eyJpZCI6MSwibG9naW5fdGltZSI6MTUzOTQzOTEyOX19.WW0DXbJ8IImKWSVXGD0YD2iT88FdaS126moEq_wMa0o HTTP/1.1" 200 -
+2018-10-13 22:46:24,611 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2018-10-13 22:46:24,615 werkzeug     INFO     127.0.0.1 - - [13/Oct/2018 22:46:24] "GET /getuserinfo?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1Mzk0MzkxMzksImlhdCI6MTUzOTQzOTEyOSwiaXNzIjoia2VuIiwiZGF0YSI6eyJpZCI6MSwibG9naW5fdGltZSI6MTUzOTQzOTEyOX19.WW0DXbJ8IImKWSVXGD0YD2iT88FdaS126moEq_wMa0o HTTP/1.1" 200 -
+2018-10-13 22:55:53,564 werkzeug     INFO     127.0.0.1 - - [13/Oct/2018 22:55:53] "OPTIONS /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-13 22:55:53,610 peewee       DEBUG    ('SELECT COUNT(1) FROM (SELECT 1 FROM `user` AS `t1`) AS `_wrapped`', [])
+2018-10-13 22:55:53,624 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` ORDER BY `t1`.`id` LIMIT %s OFFSET %s', [20, 0])
+2018-10-13 22:55:53,630 werkzeug     INFO     127.0.0.1 - - [13/Oct/2018 22:55:53] "GET /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-13 22:56:29,638 werkzeug     INFO     127.0.0.1 - - [13/Oct/2018 22:56:29] "OPTIONS /getuserinfo?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1Mzk0MzkxMzksImlhdCI6MTUzOTQzOTEyOSwiaXNzIjoia2VuIiwiZGF0YSI6eyJpZCI6MSwibG9naW5fdGltZSI6MTUzOTQzOTEyOX19.WW0DXbJ8IImKWSVXGD0YD2iT88FdaS126moEq_wMa0o HTTP/1.1" 200 -
+2018-10-13 22:56:29,812 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2018-10-13 22:56:29,821 werkzeug     INFO     127.0.0.1 - - [13/Oct/2018 22:56:29] "GET /getuserinfo?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1Mzk0MzkxMzksImlhdCI6MTUzOTQzOTEyOSwiaXNzIjoia2VuIiwiZGF0YSI6eyJpZCI6MSwibG9naW5fdGltZSI6MTUzOTQzOTEyOX19.WW0DXbJ8IImKWSVXGD0YD2iT88FdaS126moEq_wMa0o HTTP/1.1" 200 -
+2018-10-13 22:56:31,440 werkzeug     INFO     127.0.0.1 - - [13/Oct/2018 22:56:31] "OPTIONS /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-13 22:56:31,465 peewee       DEBUG    ('SELECT COUNT(1) FROM (SELECT 1 FROM `user` AS `t1`) AS `_wrapped`', [])
+2018-10-13 22:56:31,489 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` ORDER BY `t1`.`id` LIMIT %s OFFSET %s', [20, 0])
+2018-10-13 22:56:31,493 werkzeug     INFO     127.0.0.1 - - [13/Oct/2018 22:56:31] "GET /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-13 22:57:05,856 werkzeug     INFO     127.0.0.1 - - [13/Oct/2018 22:57:05] "OPTIONS /getuserinfo?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1Mzk0MzkxMzksImlhdCI6MTUzOTQzOTEyOSwiaXNzIjoia2VuIiwiZGF0YSI6eyJpZCI6MSwibG9naW5fdGltZSI6MTUzOTQzOTEyOX19.WW0DXbJ8IImKWSVXGD0YD2iT88FdaS126moEq_wMa0o HTTP/1.1" 200 -
+2018-10-13 22:57:05,877 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2018-10-13 22:57:05,894 werkzeug     INFO     127.0.0.1 - - [13/Oct/2018 22:57:05] "GET /getuserinfo?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1Mzk0MzkxMzksImlhdCI6MTUzOTQzOTEyOSwiaXNzIjoia2VuIiwiZGF0YSI6eyJpZCI6MSwibG9naW5fdGltZSI6MTUzOTQzOTEyOX19.WW0DXbJ8IImKWSVXGD0YD2iT88FdaS126moEq_wMa0o HTTP/1.1" 200 -
+2018-10-13 22:57:06,222 werkzeug     INFO     127.0.0.1 - - [13/Oct/2018 22:57:06] "OPTIONS /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-13 22:57:06,236 peewee       DEBUG    ('SELECT COUNT(1) FROM (SELECT 1 FROM `user` AS `t1`) AS `_wrapped`', [])
+2018-10-13 22:57:06,241 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` ORDER BY `t1`.`id` LIMIT %s OFFSET %s', [20, 0])
+2018-10-13 22:57:06,246 werkzeug     INFO     127.0.0.1 - - [13/Oct/2018 22:57:06] "GET /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-13 22:57:24,272 werkzeug     INFO     127.0.0.1 - - [13/Oct/2018 22:57:24] "OPTIONS /getuserinfo?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1Mzk0MzkxMzksImlhdCI6MTUzOTQzOTEyOSwiaXNzIjoia2VuIiwiZGF0YSI6eyJpZCI6MSwibG9naW5fdGltZSI6MTUzOTQzOTEyOX19.WW0DXbJ8IImKWSVXGD0YD2iT88FdaS126moEq_wMa0o HTTP/1.1" 200 -
+2018-10-13 22:57:24,285 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2018-10-13 22:57:24,299 werkzeug     INFO     127.0.0.1 - - [13/Oct/2018 22:57:24] "GET /getuserinfo?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1Mzk0MzkxMzksImlhdCI6MTUzOTQzOTEyOSwiaXNzIjoia2VuIiwiZGF0YSI6eyJpZCI6MSwibG9naW5fdGltZSI6MTUzOTQzOTEyOX19.WW0DXbJ8IImKWSVXGD0YD2iT88FdaS126moEq_wMa0o HTTP/1.1" 200 -
+2018-10-13 22:57:24,605 werkzeug     INFO     127.0.0.1 - - [13/Oct/2018 22:57:24] "OPTIONS /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-13 22:57:24,622 peewee       DEBUG    ('SELECT COUNT(1) FROM (SELECT 1 FROM `user` AS `t1`) AS `_wrapped`', [])
+2018-10-13 22:57:24,628 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` ORDER BY `t1`.`id` LIMIT %s OFFSET %s', [20, 0])
+2018-10-13 22:57:24,632 werkzeug     INFO     127.0.0.1 - - [13/Oct/2018 22:57:24] "GET /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-13 22:57:41,044 werkzeug     INFO     127.0.0.1 - - [13/Oct/2018 22:57:41] "OPTIONS /getuser?page=1&limit=20&username=test&sort=%2Bid HTTP/1.1" 200 -
+2018-10-13 22:57:41,096 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` WHERE (`t1`.`username` = %s)', ['test'])
+2018-10-13 22:57:41,145 werkzeug     INFO     127.0.0.1 - - [13/Oct/2018 22:57:41] "GET /getuser?page=1&limit=20&username=test&sort=%2Bid HTTP/1.1" 200 -
+2018-10-13 22:57:48,946 werkzeug     INFO     127.0.0.1 - - [13/Oct/2018 22:57:48] "OPTIONS /getuser?page=1&limit=20&username=&sort=%2Bid HTTP/1.1" 200 -
+2018-10-13 22:57:48,957 peewee       DEBUG    ('SELECT COUNT(1) FROM (SELECT 1 FROM `user` AS `t1`) AS `_wrapped`', [])
+2018-10-13 22:57:48,960 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` ORDER BY `t1`.`id` LIMIT %s OFFSET %s', [20, 0])
+2018-10-13 22:57:48,964 werkzeug     INFO     127.0.0.1 - - [13/Oct/2018 22:57:48] "GET /getuser?page=1&limit=20&username=&sort=%2Bid HTTP/1.1" 200 -
+2018-10-13 23:27:00,557 werkzeug     INFO      * Detected change in '/Users/oliver/Flask-Apitest-Server/app/rest/usermanage.py', reloading
+2018-10-13 23:27:00,640 werkzeug     INFO      * Restarting with stat
+2018-10-13 23:27:54,000 werkzeug     INFO      * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2018-10-13 23:27:54,006 werkzeug     INFO      * Restarting with stat
+2018-10-13 23:27:54,281 werkzeug     WARNING   * Debugger is active!
+2018-10-13 23:27:54,290 werkzeug     INFO      * Debugger PIN: 339-093-568
+2018-10-13 23:28:09,412 werkzeug     INFO     127.0.0.1 - - [13/Oct/2018 23:28:09] "OPTIONS /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-13 23:28:09,431 peewee       DEBUG    ('SELECT COUNT(1) FROM (SELECT 1 FROM `user` AS `t1`) AS `_wrapped`', [])
+2018-10-13 23:28:09,442 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` ORDER BY `t1`.`id` LIMIT %s OFFSET %s', [20, 0])
+2018-10-13 23:28:09,446 werkzeug     INFO     127.0.0.1 - - [13/Oct/2018 23:28:09] "GET /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-13 23:28:16,583 werkzeug     INFO     127.0.0.1 - - [13/Oct/2018 23:28:16] "OPTIONS /getuser?page=1&limit=20&username=admin&sort=%2Bid HTTP/1.1" 200 -
+2018-10-13 23:28:16,628 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` WHERE ((`t1`.`username` = %s) AND (`t1`.`role_id` = %s))', ['admin', 1])
+2018-10-13 23:28:16,633 werkzeug     INFO     127.0.0.1 - - [13/Oct/2018 23:28:16] "GET /getuser?page=1&limit=20&username=admin&sort=%2Bid HTTP/1.1" 200 -
+2018-10-13 23:28:58,174 werkzeug     INFO      * Detected change in '/Users/oliver/Flask-Apitest-Server/app/rest/usermanage.py', reloading
+2018-10-13 23:28:58,242 werkzeug     INFO      * Restarting with stat
+2018-10-13 23:28:58,637 werkzeug     WARNING   * Debugger is active!
+2018-10-13 23:28:58,645 werkzeug     INFO      * Debugger PIN: 339-093-568
+2018-10-13 23:29:05,748 werkzeug     INFO      * Detected change in '/Users/oliver/Flask-Apitest-Server/app/rest/usermanage.py', reloading
+2018-10-13 23:29:05,802 werkzeug     INFO      * Restarting with stat
+2018-10-13 23:29:06,092 werkzeug     WARNING   * Debugger is active!
+2018-10-13 23:29:06,100 werkzeug     INFO      * Debugger PIN: 339-093-568
+2018-10-13 23:29:08,246 werkzeug     INFO     127.0.0.1 - - [13/Oct/2018 23:29:08] "OPTIONS /getuser?page=1&limit=20&username=admin&sort=%2Bid HTTP/1.1" 200 -
+2018-10-13 23:29:08,267 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` WHERE ((`t1`.`username` = %s) AND (`t1`.`role_id` IS %s))', ['admin', None])
+2018-10-13 23:29:08,274 werkzeug     INFO     127.0.0.1 - - [13/Oct/2018 23:29:08] "GET /getuser?page=1&limit=20&username=admin&sort=%2Bid HTTP/1.1" 200 -
+2018-10-13 23:29:27,047 werkzeug     INFO     127.0.0.1 - - [13/Oct/2018 23:29:27] "OPTIONS /getuser?page=1&limit=20&username=admin&sort=%2Bid HTTP/1.1" 200 -
+2018-10-13 23:29:27,068 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` WHERE ((`t1`.`username` = %s) AND (`t1`.`role_id` IS %s))', ['admin', None])
+2018-10-13 23:29:27,073 werkzeug     INFO     127.0.0.1 - - [13/Oct/2018 23:29:27] "GET /getuser?page=1&limit=20&username=admin&sort=%2Bid HTTP/1.1" 200 -
+2018-10-13 23:31:15,875 werkzeug     INFO      * Detected change in '/Users/oliver/Flask-Apitest-Server/app/rest/usermanage.py', reloading
+2018-10-13 23:31:15,957 werkzeug     INFO      * Restarting with stat
+2018-10-13 23:31:16,428 werkzeug     WARNING   * Debugger is active!
+2018-10-13 23:31:16,435 werkzeug     INFO      * Debugger PIN: 339-093-568
+2018-10-13 23:32:05,724 werkzeug     INFO     127.0.0.1 - - [13/Oct/2018 23:32:05] "OPTIONS /getuser?page=1&limit=20&username=&sort=%2Bid&userrole=%E7%AE%A1%E7%90%86%E5%91%98 HTTP/1.1" 200 -
+2018-10-13 23:32:05,758 peewee       DEBUG    ('SELECT COUNT(1) FROM (SELECT 1 FROM `user` AS `t1`) AS `_wrapped`', [])
+2018-10-13 23:32:05,768 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` ORDER BY `t1`.`id` LIMIT %s OFFSET %s', [20, 0])
+2018-10-13 23:32:05,772 werkzeug     INFO     127.0.0.1 - - [13/Oct/2018 23:32:05] "GET /getuser?page=1&limit=20&username=&sort=%2Bid&userrole=%E7%AE%A1%E7%90%86%E5%91%98 HTTP/1.1" 200 -
+2018-10-13 23:33:04,993 werkzeug     INFO      * Detected change in '/Users/oliver/Flask-Apitest-Server/app/rest/usermanage.py', reloading
+2018-10-13 23:33:05,105 werkzeug     INFO      * Restarting with stat
+2018-10-13 23:33:32,019 werkzeug     INFO      * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2018-10-13 23:33:32,024 werkzeug     INFO      * Restarting with stat
+2018-10-13 23:33:32,305 werkzeug     WARNING   * Debugger is active!
+2018-10-13 23:33:32,316 werkzeug     INFO      * Debugger PIN: 339-093-568
+2018-10-13 23:33:50,280 werkzeug     INFO     127.0.0.1 - - [13/Oct/2018 23:33:50] "OPTIONS /getuser?page=1&limit=20&username=&sort=%2Bid&userrole=%E7%AE%A1%E7%90%86%E5%91%98 HTTP/1.1" 200 -
+2018-10-13 23:33:50,297 peewee       DEBUG    ('SELECT COUNT(1) FROM (SELECT 1 FROM `user` AS `t1`) AS `_wrapped`', [])
+2018-10-13 23:33:50,301 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` ORDER BY `t1`.`id` LIMIT %s OFFSET %s', [20, 0])
+2018-10-13 23:33:50,307 werkzeug     INFO     127.0.0.1 - - [13/Oct/2018 23:33:50] "GET /getuser?page=1&limit=20&username=&sort=%2Bid&userrole=%E7%AE%A1%E7%90%86%E5%91%98 HTTP/1.1" 200 -
+2018-10-13 23:33:56,723 werkzeug     INFO     127.0.0.1 - - [13/Oct/2018 23:33:56] "OPTIONS /getuser?page=1&limit=20&username=&sort=%2Bid&userrole=%E7%AE%A1%E7%90%86%E5%91%98 HTTP/1.1" 200 -
+2018-10-13 23:33:56,762 peewee       DEBUG    ('SELECT COUNT(1) FROM (SELECT 1 FROM `user` AS `t1`) AS `_wrapped`', [])
+2018-10-13 23:33:56,768 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` ORDER BY `t1`.`id` LIMIT %s OFFSET %s', [20, 0])
+2018-10-13 23:33:56,772 werkzeug     INFO     127.0.0.1 - - [13/Oct/2018 23:33:56] "GET /getuser?page=1&limit=20&username=&sort=%2Bid&userrole=%E7%AE%A1%E7%90%86%E5%91%98 HTTP/1.1" 200 -
+2018-10-13 23:34:23,202 werkzeug     INFO     127.0.0.1 - - [13/Oct/2018 23:34:23] "OPTIONS /getuser?page=1&limit=20&username=&status=%E5%90%AF%E7%94%A8&sort=%2Bid&userrole= HTTP/1.1" 200 -
+2018-10-13 23:34:23,312 werkzeug     INFO     127.0.0.1 - - [13/Oct/2018 23:34:23] "GET /getuser?page=1&limit=20&username=&status=%E5%90%AF%E7%94%A8&sort=%2Bid&userrole= HTTP/1.1" 500 -
+2018-10-13 23:35:48,486 werkzeug     INFO     127.0.0.1 - - [13/Oct/2018 23:35:48] "OPTIONS /getuser?page=1&limit=20&username=&status=%E5%90%AF%E7%94%A8&sort=%2Bid&userrole= HTTP/1.1" 200 -
+2018-10-13 23:35:48,555 werkzeug     INFO     127.0.0.1 - - [13/Oct/2018 23:35:48] "GET /getuser?page=1&limit=20&username=&status=%E5%90%AF%E7%94%A8&sort=%2Bid&userrole= HTTP/1.1" 500 -
+2018-10-13 23:41:24,345 werkzeug     INFO     127.0.0.1 - - [13/Oct/2018 23:41:24] "OPTIONS /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-13 23:41:24,369 peewee       DEBUG    ('SELECT COUNT(1) FROM (SELECT 1 FROM `user` AS `t1`) AS `_wrapped`', [])
+2018-10-13 23:41:24,378 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` ORDER BY `t1`.`id` LIMIT %s OFFSET %s', [20, 0])
+2018-10-13 23:41:24,385 werkzeug     INFO     127.0.0.1 - - [13/Oct/2018 23:41:24] "GET /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-13 23:45:55,950 werkzeug     INFO     127.0.0.1 - - [13/Oct/2018 23:45:55] "OPTIONS /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-13 23:45:55,962 peewee       DEBUG    ('SELECT COUNT(1) FROM (SELECT 1 FROM `user` AS `t1`) AS `_wrapped`', [])
+2018-10-13 23:45:55,966 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` ORDER BY `t1`.`id` LIMIT %s OFFSET %s', [20, 0])
+2018-10-13 23:45:55,969 werkzeug     INFO     127.0.0.1 - - [13/Oct/2018 23:45:55] "GET /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-13 23:46:05,672 werkzeug     INFO     127.0.0.1 - - [13/Oct/2018 23:46:05] "OPTIONS /getuser?page=1&limit=20&status=%E5%90%AF%E7%94%A8&sort=%2Bid HTTP/1.1" 200 -
+2018-10-13 23:46:05,924 werkzeug     INFO     127.0.0.1 - - [13/Oct/2018 23:46:05] "GET /getuser?page=1&limit=20&status=%E5%90%AF%E7%94%A8&sort=%2Bid HTTP/1.1" 500 -
+2018-10-13 23:46:34,902 werkzeug     INFO     127.0.0.1 - - [13/Oct/2018 23:46:34] "OPTIONS /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-13 23:46:34,919 peewee       DEBUG    ('SELECT COUNT(1) FROM (SELECT 1 FROM `user` AS `t1`) AS `_wrapped`', [])
+2018-10-13 23:46:34,925 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` ORDER BY `t1`.`id` LIMIT %s OFFSET %s', [20, 0])
+2018-10-13 23:46:34,929 werkzeug     INFO     127.0.0.1 - - [13/Oct/2018 23:46:34] "GET /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-13 23:46:45,805 werkzeug     INFO     127.0.0.1 - - [13/Oct/2018 23:46:45] "OPTIONS /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-13 23:46:45,824 peewee       DEBUG    ('SELECT COUNT(1) FROM (SELECT 1 FROM `user` AS `t1`) AS `_wrapped`', [])
+2018-10-13 23:46:45,828 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` ORDER BY `t1`.`id` LIMIT %s OFFSET %s', [20, 0])
+2018-10-13 23:46:45,837 werkzeug     INFO     127.0.0.1 - - [13/Oct/2018 23:46:45] "GET /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-13 23:46:46,963 peewee       DEBUG    ('SELECT COUNT(1) FROM (SELECT 1 FROM `user` AS `t1`) AS `_wrapped`', [])
+2018-10-13 23:46:46,967 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` ORDER BY `t1`.`id` LIMIT %s OFFSET %s', [20, 0])
+2018-10-13 23:46:46,973 werkzeug     INFO     127.0.0.1 - - [13/Oct/2018 23:46:46] "GET /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-13 23:47:09,350 werkzeug     INFO     127.0.0.1 - - [13/Oct/2018 23:47:09] "OPTIONS /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-13 23:47:09,415 peewee       DEBUG    ('SELECT COUNT(1) FROM (SELECT 1 FROM `user` AS `t1`) AS `_wrapped`', [])
+2018-10-13 23:47:09,420 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` ORDER BY `t1`.`id` LIMIT %s OFFSET %s', [20, 0])
+2018-10-13 23:47:09,424 werkzeug     INFO     127.0.0.1 - - [13/Oct/2018 23:47:09] "GET /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-13 23:47:14,739 werkzeug     INFO     127.0.0.1 - - [13/Oct/2018 23:47:14] "OPTIONS /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-13 23:47:14,758 peewee       DEBUG    ('SELECT COUNT(1) FROM (SELECT 1 FROM `user` AS `t1`) AS `_wrapped`', [])
+2018-10-13 23:47:14,763 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` ORDER BY `t1`.`id` LIMIT %s OFFSET %s', [20, 0])
+2018-10-13 23:47:14,769 werkzeug     INFO     127.0.0.1 - - [13/Oct/2018 23:47:14] "GET /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-13 23:47:21,121 werkzeug     INFO     127.0.0.1 - - [13/Oct/2018 23:47:21] "OPTIONS /getuser?page=1&limit=20&status=%E5%90%AF%E7%94%A8&sort=%2Bid HTTP/1.1" 200 -
+2018-10-13 23:47:21,226 werkzeug     INFO     127.0.0.1 - - [13/Oct/2018 23:47:21] "GET /getuser?page=1&limit=20&status=%E5%90%AF%E7%94%A8&sort=%2Bid HTTP/1.1" 500 -
+2018-10-14 00:20:24,722 werkzeug     INFO     127.0.0.1 - - [14/Oct/2018 00:20:24] "OPTIONS /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-14 00:20:24,740 peewee       DEBUG    ('SELECT COUNT(1) FROM (SELECT 1 FROM `user` AS `t1`) AS `_wrapped`', [])
+2018-10-14 00:20:24,755 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` ORDER BY `t1`.`id` LIMIT %s OFFSET %s', [20, 0])
+2018-10-14 00:20:24,802 werkzeug     INFO     127.0.0.1 - - [14/Oct/2018 00:20:24] "GET /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-14 00:28:02,893 werkzeug     INFO     127.0.0.1 - - [14/Oct/2018 00:28:02] "OPTIONS /getuser?page=1&limit=20&status=%E7%A6%81%E7%94%A8&sort=%2Bid HTTP/1.1" 200 -
+2018-10-14 00:28:03,010 werkzeug     INFO     127.0.0.1 - - [14/Oct/2018 00:28:03] "GET /getuser?page=1&limit=20&status=%E7%A6%81%E7%94%A8&sort=%2Bid HTTP/1.1" 500 -
+2018-10-14 00:28:40,928 werkzeug     INFO     127.0.0.1 - - [14/Oct/2018 00:28:40] "OPTIONS /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-14 00:28:40,943 peewee       DEBUG    ('SELECT COUNT(1) FROM (SELECT 1 FROM `user` AS `t1`) AS `_wrapped`', [])
+2018-10-14 00:28:40,950 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` ORDER BY `t1`.`id` LIMIT %s OFFSET %s', [20, 0])
+2018-10-14 00:28:40,957 werkzeug     INFO     127.0.0.1 - - [14/Oct/2018 00:28:40] "GET /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-14 00:40:42,699 werkzeug     INFO     127.0.0.1 - - [14/Oct/2018 00:40:42] "OPTIONS /getuser HTTP/1.1" 200 -
+2018-10-14 00:40:42,716 werkzeug     INFO     127.0.0.1 - - [14/Oct/2018 00:40:42] "GET /getuser HTTP/1.1" 200 -
+2018-10-14 00:40:59,546 werkzeug     INFO     127.0.0.1 - - [14/Oct/2018 00:40:59] "OPTIONS /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-14 00:40:59,574 peewee       DEBUG    ('SELECT COUNT(1) FROM (SELECT 1 FROM `user` AS `t1`) AS `_wrapped`', [])
+2018-10-14 00:40:59,587 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` ORDER BY `t1`.`id` LIMIT %s OFFSET %s', [20, 0])
+2018-10-14 00:40:59,595 werkzeug     INFO     127.0.0.1 - - [14/Oct/2018 00:40:59] "GET /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-14 00:41:05,493 werkzeug     INFO     127.0.0.1 - - [14/Oct/2018 00:41:05] "OPTIONS /getuser?page=1&limit=20&status=%E5%90%AF%E7%94%A8&sort=%2Bid HTTP/1.1" 200 -
+2018-10-14 00:41:05,623 werkzeug     INFO     127.0.0.1 - - [14/Oct/2018 00:41:05] "GET /getuser?page=1&limit=20&status=%E5%90%AF%E7%94%A8&sort=%2Bid HTTP/1.1" 500 -
+2018-10-14 00:41:59,231 werkzeug     INFO     127.0.0.1 - - [14/Oct/2018 00:41:59] "OPTIONS /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-14 00:41:59,252 peewee       DEBUG    ('SELECT COUNT(1) FROM (SELECT 1 FROM `user` AS `t1`) AS `_wrapped`', [])
+2018-10-14 00:41:59,259 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` ORDER BY `t1`.`id` LIMIT %s OFFSET %s', [20, 0])
+2018-10-14 00:41:59,266 werkzeug     INFO     127.0.0.1 - - [14/Oct/2018 00:41:59] "GET /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-14 00:42:03,539 werkzeug     INFO     127.0.0.1 - - [14/Oct/2018 00:42:03] "OPTIONS /getuser?page=1&limit=20&status=%E5%90%AF%E7%94%A8&sort=%2Bid HTTP/1.1" 200 -
+2018-10-14 00:42:03,674 werkzeug     INFO     127.0.0.1 - - [14/Oct/2018 00:42:03] "GET /getuser?page=1&limit=20&status=%E5%90%AF%E7%94%A8&sort=%2Bid HTTP/1.1" 500 -
+2018-10-14 00:42:28,215 werkzeug     INFO     127.0.0.1 - - [14/Oct/2018 00:42:28] "OPTIONS /getuser?page=1&limit=20&status=%E5%90%AF%E7%94%A8&sort=%2Bid HTTP/1.1" 200 -
+2018-10-14 00:42:28,282 werkzeug     INFO     127.0.0.1 - - [14/Oct/2018 00:42:28] "GET /getuser?page=1&limit=20&status=%E5%90%AF%E7%94%A8&sort=%2Bid HTTP/1.1" 500 -
+2018-10-14 00:42:49,755 werkzeug     INFO     127.0.0.1 - - [14/Oct/2018 00:42:49] "OPTIONS /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-14 00:42:49,787 peewee       DEBUG    ('SELECT COUNT(1) FROM (SELECT 1 FROM `user` AS `t1`) AS `_wrapped`', [])
+2018-10-14 00:42:49,796 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` ORDER BY `t1`.`id` LIMIT %s OFFSET %s', [20, 0])
+2018-10-14 00:42:49,804 werkzeug     INFO     127.0.0.1 - - [14/Oct/2018 00:42:49] "GET /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-14 00:42:55,126 werkzeug     INFO     127.0.0.1 - - [14/Oct/2018 00:42:55] "OPTIONS /getuser?page=1&limit=20&status=%E5%90%AF%E7%94%A8&sort=%2Bid HTTP/1.1" 200 -
+2018-10-14 00:42:55,244 werkzeug     INFO     127.0.0.1 - - [14/Oct/2018 00:42:55] "GET /getuser?page=1&limit=20&status=%E5%90%AF%E7%94%A8&sort=%2Bid HTTP/1.1" 500 -
+2018-10-14 00:45:45,724 werkzeug     INFO     127.0.0.1 - - [14/Oct/2018 00:45:45] "OPTIONS /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-14 00:45:45,739 peewee       DEBUG    ('SELECT COUNT(1) FROM (SELECT 1 FROM `user` AS `t1`) AS `_wrapped`', [])
+2018-10-14 00:45:45,749 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` ORDER BY `t1`.`id` LIMIT %s OFFSET %s', [20, 0])
+2018-10-14 00:45:45,759 werkzeug     INFO     127.0.0.1 - - [14/Oct/2018 00:45:45] "GET /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-14 00:50:00,614 werkzeug     INFO     127.0.0.1 - - [14/Oct/2018 00:50:00] "OPTIONS /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-14 00:50:00,628 peewee       DEBUG    ('SELECT COUNT(1) FROM (SELECT 1 FROM `user` AS `t1`) AS `_wrapped`', [])
+2018-10-14 00:50:00,632 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` ORDER BY `t1`.`id` LIMIT %s OFFSET %s', [20, 0])
+2018-10-14 00:50:00,664 werkzeug     INFO     127.0.0.1 - - [14/Oct/2018 00:50:00] "GET /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-14 00:50:13,775 werkzeug     INFO     127.0.0.1 - - [14/Oct/2018 00:50:13] "OPTIONS /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-14 00:50:13,795 peewee       DEBUG    ('SELECT COUNT(1) FROM (SELECT 1 FROM `user` AS `t1`) AS `_wrapped`', [])
+2018-10-14 00:50:13,805 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` ORDER BY `t1`.`id` LIMIT %s OFFSET %s', [20, 0])
+2018-10-14 00:50:13,812 werkzeug     INFO     127.0.0.1 - - [14/Oct/2018 00:50:13] "GET /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-14 00:51:23,345 werkzeug     INFO     127.0.0.1 - - [14/Oct/2018 00:51:23] "OPTIONS /getuserinfo?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1Mzk0MzkxMzksImlhdCI6MTUzOTQzOTEyOSwiaXNzIjoia2VuIiwiZGF0YSI6eyJpZCI6MSwibG9naW5fdGltZSI6MTUzOTQzOTEyOX19.WW0DXbJ8IImKWSVXGD0YD2iT88FdaS126moEq_wMa0o HTTP/1.1" 200 -
+2018-10-14 00:51:23,467 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2018-10-14 00:51:23,475 werkzeug     INFO     127.0.0.1 - - [14/Oct/2018 00:51:23] "GET /getuserinfo?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1Mzk0MzkxMzksImlhdCI6MTUzOTQzOTEyOSwiaXNzIjoia2VuIiwiZGF0YSI6eyJpZCI6MSwibG9naW5fdGltZSI6MTUzOTQzOTEyOX19.WW0DXbJ8IImKWSVXGD0YD2iT88FdaS126moEq_wMa0o HTTP/1.1" 200 -
+2018-10-14 00:51:28,443 werkzeug     INFO     127.0.0.1 - - [14/Oct/2018 00:51:28] "OPTIONS /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-14 00:51:28,485 peewee       DEBUG    ('SELECT COUNT(1) FROM (SELECT 1 FROM `user` AS `t1`) AS `_wrapped`', [])
+2018-10-14 00:51:28,492 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` ORDER BY `t1`.`id` LIMIT %s OFFSET %s', [20, 0])
+2018-10-14 00:51:28,497 werkzeug     INFO     127.0.0.1 - - [14/Oct/2018 00:51:28] "GET /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-14 00:53:03,709 werkzeug     INFO     127.0.0.1 - - [14/Oct/2018 00:53:03] "OPTIONS /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-14 00:53:03,728 peewee       DEBUG    ('SELECT COUNT(1) FROM (SELECT 1 FROM `user` AS `t1`) AS `_wrapped`', [])
+2018-10-14 00:53:03,737 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` ORDER BY `t1`.`id` LIMIT %s OFFSET %s', [20, 0])
+2018-10-14 00:53:03,740 werkzeug     INFO     127.0.0.1 - - [14/Oct/2018 00:53:03] "GET /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-14 00:53:14,334 werkzeug     INFO     127.0.0.1 - - [14/Oct/2018 00:53:14] "OPTIONS /getuserinfo?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1Mzk0MzkxMzksImlhdCI6MTUzOTQzOTEyOSwiaXNzIjoia2VuIiwiZGF0YSI6eyJpZCI6MSwibG9naW5fdGltZSI6MTUzOTQzOTEyOX19.WW0DXbJ8IImKWSVXGD0YD2iT88FdaS126moEq_wMa0o HTTP/1.1" 200 -
+2018-10-14 00:53:14,349 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2018-10-14 00:53:14,361 werkzeug     INFO     127.0.0.1 - - [14/Oct/2018 00:53:14] "GET /getuserinfo?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1Mzk0MzkxMzksImlhdCI6MTUzOTQzOTEyOSwiaXNzIjoia2VuIiwiZGF0YSI6eyJpZCI6MSwibG9naW5fdGltZSI6MTUzOTQzOTEyOX19.WW0DXbJ8IImKWSVXGD0YD2iT88FdaS126moEq_wMa0o HTTP/1.1" 200 -
+2018-10-14 00:53:14,664 werkzeug     INFO     127.0.0.1 - - [14/Oct/2018 00:53:14] "OPTIONS /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-14 00:53:14,679 peewee       DEBUG    ('SELECT COUNT(1) FROM (SELECT 1 FROM `user` AS `t1`) AS `_wrapped`', [])
+2018-10-14 00:53:14,686 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` ORDER BY `t1`.`id` LIMIT %s OFFSET %s', [20, 0])
+2018-10-14 00:53:14,689 werkzeug     INFO     127.0.0.1 - - [14/Oct/2018 00:53:14] "GET /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-14 00:53:35,755 werkzeug     INFO     127.0.0.1 - - [14/Oct/2018 00:53:35] "OPTIONS /getuserinfo?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1Mzk0MzkxMzksImlhdCI6MTUzOTQzOTEyOSwiaXNzIjoia2VuIiwiZGF0YSI6eyJpZCI6MSwibG9naW5fdGltZSI6MTUzOTQzOTEyOX19.WW0DXbJ8IImKWSVXGD0YD2iT88FdaS126moEq_wMa0o HTTP/1.1" 200 -
+2018-10-14 00:53:35,775 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2018-10-14 00:53:35,785 werkzeug     INFO     127.0.0.1 - - [14/Oct/2018 00:53:35] "GET /getuserinfo?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1Mzk0MzkxMzksImlhdCI6MTUzOTQzOTEyOSwiaXNzIjoia2VuIiwiZGF0YSI6eyJpZCI6MSwibG9naW5fdGltZSI6MTUzOTQzOTEyOX19.WW0DXbJ8IImKWSVXGD0YD2iT88FdaS126moEq_wMa0o HTTP/1.1" 200 -
+2018-10-14 00:53:36,111 werkzeug     INFO     127.0.0.1 - - [14/Oct/2018 00:53:36] "OPTIONS /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-14 00:53:36,130 peewee       DEBUG    ('SELECT COUNT(1) FROM (SELECT 1 FROM `user` AS `t1`) AS `_wrapped`', [])
+2018-10-14 00:53:36,137 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` ORDER BY `t1`.`id` LIMIT %s OFFSET %s', [20, 0])
+2018-10-14 00:53:36,140 werkzeug     INFO     127.0.0.1 - - [14/Oct/2018 00:53:36] "GET /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-14 00:53:55,420 werkzeug     INFO     127.0.0.1 - - [14/Oct/2018 00:53:55] "OPTIONS /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-14 00:53:55,451 peewee       DEBUG    ('SELECT COUNT(1) FROM (SELECT 1 FROM `user` AS `t1`) AS `_wrapped`', [])
+2018-10-14 00:53:55,459 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` ORDER BY `t1`.`id` LIMIT %s OFFSET %s', [20, 0])
+2018-10-14 00:53:55,464 werkzeug     INFO     127.0.0.1 - - [14/Oct/2018 00:53:55] "GET /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-14 00:56:15,071 werkzeug     INFO     127.0.0.1 - - [14/Oct/2018 00:56:15] "OPTIONS /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-14 00:56:15,082 peewee       DEBUG    ('SELECT COUNT(1) FROM (SELECT 1 FROM `user` AS `t1`) AS `_wrapped`', [])
+2018-10-14 00:56:15,092 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` ORDER BY `t1`.`id` LIMIT %s OFFSET %s', [20, 0])
+2018-10-14 00:56:15,095 werkzeug     INFO     127.0.0.1 - - [14/Oct/2018 00:56:15] "GET /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-14 00:56:16,557 werkzeug     INFO     127.0.0.1 - - [14/Oct/2018 00:56:16] "OPTIONS /getuserinfo?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1Mzk0MzkxMzksImlhdCI6MTUzOTQzOTEyOSwiaXNzIjoia2VuIiwiZGF0YSI6eyJpZCI6MSwibG9naW5fdGltZSI6MTUzOTQzOTEyOX19.WW0DXbJ8IImKWSVXGD0YD2iT88FdaS126moEq_wMa0o HTTP/1.1" 200 -
+2018-10-14 00:56:16,571 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2018-10-14 00:56:16,578 werkzeug     INFO     127.0.0.1 - - [14/Oct/2018 00:56:16] "GET /getuserinfo?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1Mzk0MzkxMzksImlhdCI6MTUzOTQzOTEyOSwiaXNzIjoia2VuIiwiZGF0YSI6eyJpZCI6MSwibG9naW5fdGltZSI6MTUzOTQzOTEyOX19.WW0DXbJ8IImKWSVXGD0YD2iT88FdaS126moEq_wMa0o HTTP/1.1" 200 -
+2018-10-14 00:56:16,854 peewee       DEBUG    ('SELECT COUNT(1) FROM (SELECT 1 FROM `user` AS `t1`) AS `_wrapped`', [])
+2018-10-14 00:56:16,860 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` ORDER BY `t1`.`id` LIMIT %s OFFSET %s', [20, 0])
+2018-10-14 00:56:16,863 werkzeug     INFO     127.0.0.1 - - [14/Oct/2018 00:56:16] "GET /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-14 00:56:57,193 werkzeug     INFO     127.0.0.1 - - [14/Oct/2018 00:56:57] "OPTIONS /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-14 00:56:57,204 peewee       DEBUG    ('SELECT COUNT(1) FROM (SELECT 1 FROM `user` AS `t1`) AS `_wrapped`', [])
+2018-10-14 00:56:57,209 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` ORDER BY `t1`.`id` LIMIT %s OFFSET %s', [20, 0])
+2018-10-14 00:56:57,337 werkzeug     INFO     127.0.0.1 - - [14/Oct/2018 00:56:57] "GET /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-14 00:57:14,332 werkzeug     INFO     127.0.0.1 - - [14/Oct/2018 00:57:14] "OPTIONS /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-14 00:57:14,341 peewee       DEBUG    ('SELECT COUNT(1) FROM (SELECT 1 FROM `user` AS `t1`) AS `_wrapped`', [])
+2018-10-14 00:57:14,346 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` ORDER BY `t1`.`id` LIMIT %s OFFSET %s', [20, 0])
+2018-10-14 00:57:14,351 werkzeug     INFO     127.0.0.1 - - [14/Oct/2018 00:57:14] "GET /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-14 00:57:17,920 werkzeug     INFO     127.0.0.1 - - [14/Oct/2018 00:57:17] "OPTIONS /getuser?page=2&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-14 00:57:17,938 peewee       DEBUG    ('SELECT COUNT(1) FROM (SELECT 1 FROM `user` AS `t1`) AS `_wrapped`', [])
+2018-10-14 00:57:17,944 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` ORDER BY `t1`.`id` LIMIT %s OFFSET %s', [20, 20])
+2018-10-14 00:57:17,947 werkzeug     INFO     127.0.0.1 - - [14/Oct/2018 00:57:17] "GET /getuser?page=2&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-14 00:57:23,552 werkzeug     INFO     127.0.0.1 - - [14/Oct/2018 00:57:23] "OPTIONS /getuser?page=1&limit=20&username=admin&sort=%2Bid HTTP/1.1" 200 -
+2018-10-14 00:57:23,578 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` WHERE (((`t1`.`username` = %s) AND (`t1`.`role_id` IS %s)) AND (`t1`.`status` IS %s))', ['admin', None, None])
+2018-10-14 00:57:23,585 werkzeug     INFO     127.0.0.1 - - [14/Oct/2018 00:57:23] "GET /getuser?page=1&limit=20&username=admin&sort=%2Bid HTTP/1.1" 200 -
+2018-10-14 00:57:38,191 werkzeug     INFO     127.0.0.1 - - [14/Oct/2018 00:57:38] "OPTIONS /getuser?page=1&limit=20&username=&sort=%2Bid HTTP/1.1" 200 -
+2018-10-14 00:57:38,209 peewee       DEBUG    ('SELECT COUNT(1) FROM (SELECT 1 FROM `user` AS `t1`) AS `_wrapped`', [])
+2018-10-14 00:57:38,213 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` ORDER BY `t1`.`id` LIMIT %s OFFSET %s', [20, 0])
+2018-10-14 00:57:38,217 werkzeug     INFO     127.0.0.1 - - [14/Oct/2018 00:57:38] "GET /getuser?page=1&limit=20&username=&sort=%2Bid HTTP/1.1" 200 -
+2018-10-14 00:57:43,341 werkzeug     INFO     127.0.0.1 - - [14/Oct/2018 00:57:43] "OPTIONS /getuser?page=1&limit=20&username=admin&sort=%2Bid HTTP/1.1" 200 -
+2018-10-14 00:57:43,364 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` WHERE (((`t1`.`username` = %s) AND (`t1`.`role_id` IS %s)) AND (`t1`.`status` IS %s))', ['admin', None, None])
+2018-10-14 00:57:43,368 werkzeug     INFO     127.0.0.1 - - [14/Oct/2018 00:57:43] "GET /getuser?page=1&limit=20&username=admin&sort=%2Bid HTTP/1.1" 200 -
+2018-10-14 00:58:03,790 werkzeug     INFO     127.0.0.1 - - [14/Oct/2018 00:58:03] "OPTIONS /getuser?page=1&limit=20&username=admin&sort=%2Bid HTTP/1.1" 200 -
+2018-10-14 00:58:03,811 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` WHERE (((`t1`.`username` = %s) AND (`t1`.`role_id` IS %s)) AND (`t1`.`status` IS %s))', ['admin', None, None])
+2018-10-14 00:58:03,816 werkzeug     INFO     127.0.0.1 - - [14/Oct/2018 00:58:03] "GET /getuser?page=1&limit=20&username=admin&sort=%2Bid HTTP/1.1" 200 -
+2018-10-14 00:58:43,905 werkzeug     INFO      * Detected change in '/Users/oliver/Flask-Apitest-Server/app/rest/usermanage.py', reloading
+2018-10-14 00:58:44,034 werkzeug     INFO      * Restarting with stat
+2018-10-14 00:58:44,614 werkzeug     WARNING   * Debugger is active!
+2018-10-14 00:58:44,629 werkzeug     INFO      * Debugger PIN: 339-093-568
+2018-10-14 00:58:46,857 werkzeug     INFO     127.0.0.1 - - [14/Oct/2018 00:58:46] "OPTIONS /getuser?page=1&limit=20&username=admin&sort=%2Bid HTTP/1.1" 200 -
+2018-10-14 00:58:46,869 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` WHERE (`t1`.`username` = %s)', ['admin'])
+2018-10-14 00:58:46,878 werkzeug     INFO     127.0.0.1 - - [14/Oct/2018 00:58:46] "GET /getuser?page=1&limit=20&username=admin&sort=%2Bid HTTP/1.1" 200 -
+2018-10-14 10:49:23,167 werkzeug     INFO     127.0.0.1 - - [14/Oct/2018 10:49:23] "OPTIONS /getuserinfo?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1Mzk0MzgwMzMsImlhdCI6MTUzOTQzODAyMywiaXNzIjoia2VuIiwiZGF0YSI6eyJpZCI6MSwibG9naW5fdGltZSI6MTUzOTQzODAyM319.h9rUC0HjvWfM2iwEFdecmr6bv08y20Xk6zV9jO5HEV0 HTTP/1.1" 200 -
+2018-10-14 10:49:23,181 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2018-10-14 10:49:23,195 werkzeug     INFO     127.0.0.1 - - [14/Oct/2018 10:49:23] "GET /getuserinfo?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1Mzk0MzgwMzMsImlhdCI6MTUzOTQzODAyMywiaXNzIjoia2VuIiwiZGF0YSI6eyJpZCI6MSwibG9naW5fdGltZSI6MTUzOTQzODAyM319.h9rUC0HjvWfM2iwEFdecmr6bv08y20Xk6zV9jO5HEV0 HTTP/1.1" 200 -
+2018-10-14 11:22:30,638 werkzeug     INFO     127.0.0.1 - - [14/Oct/2018 11:22:30] "OPTIONS /login HTTP/1.1" 200 -
+2018-10-14 11:22:30,647 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` WHERE (`t1`.`username` = %s) LIMIT %s OFFSET %s', ['admin', 1, 0])
+2018-10-14 11:22:30,775 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` WHERE (`t1`.`username` = %s) LIMIT %s OFFSET %s', ['admin', 1, 0])
+2018-10-14 11:22:30,890 werkzeug     INFO     127.0.0.1 - - [14/Oct/2018 11:22:30] "POST /login HTTP/1.1" 400 -
+2018-10-14 11:22:32,604 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` WHERE (`t1`.`username` = %s) LIMIT %s OFFSET %s', ['admin', 1, 0])
+2018-10-14 11:22:32,734 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` WHERE (`t1`.`username` = %s) LIMIT %s OFFSET %s', ['admin', 1, 0])
+2018-10-14 11:22:32,868 werkzeug     INFO     127.0.0.1 - - [14/Oct/2018 11:22:32] "POST /login HTTP/1.1" 400 -
+2018-10-14 11:22:46,479 werkzeug     INFO     127.0.0.1 - - [14/Oct/2018 11:22:46] "OPTIONS /login HTTP/1.1" 200 -
+2018-10-14 11:22:46,486 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` WHERE (`t1`.`username` = %s) LIMIT %s OFFSET %s', ['admin', 1, 0])
+2018-10-14 11:22:46,612 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` WHERE (`t1`.`username` = %s) LIMIT %s OFFSET %s', ['admin', 1, 0])
+2018-10-14 11:22:46,727 werkzeug     INFO     127.0.0.1 - - [14/Oct/2018 11:22:46] "POST /login HTTP/1.1" 200 -
+2018-10-14 11:22:46,739 werkzeug     INFO     127.0.0.1 - - [14/Oct/2018 11:22:46] "OPTIONS /getuserinfo?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1Mzk0ODczNzYsImlhdCI6MTUzOTQ4NzM2NiwiaXNzIjoia2VuIiwiZGF0YSI6eyJpZCI6MSwibG9naW5fdGltZSI6MTUzOTQ4NzM2Nn19.tISAbpusCP2FyL1zXdLxVkVKgEVJGpySyms_GNW9oiA HTTP/1.1" 200 -
+2018-10-14 11:22:46,748 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2018-10-14 11:22:46,754 werkzeug     INFO     127.0.0.1 - - [14/Oct/2018 11:22:46] "GET /getuserinfo?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1Mzk0ODczNzYsImlhdCI6MTUzOTQ4NzM2NiwiaXNzIjoia2VuIiwiZGF0YSI6eyJpZCI6MSwibG9naW5fdGltZSI6MTUzOTQ4NzM2Nn19.tISAbpusCP2FyL1zXdLxVkVKgEVJGpySyms_GNW9oiA HTTP/1.1" 200 -
+2018-10-14 11:22:52,315 werkzeug     INFO     127.0.0.1 - - [14/Oct/2018 11:22:52] "OPTIONS /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-14 11:22:52,324 peewee       DEBUG    ('SELECT COUNT(1) FROM (SELECT 1 FROM `user` AS `t1`) AS `_wrapped`', [])
+2018-10-14 11:22:52,331 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` ORDER BY `t1`.`id` LIMIT %s OFFSET %s', [20, 0])
+2018-10-14 11:22:52,334 werkzeug     INFO     127.0.0.1 - - [14/Oct/2018 11:22:52] "GET /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-14 11:24:19,291 werkzeug     INFO     127.0.0.1 - - [14/Oct/2018 11:24:19] "OPTIONS /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-14 11:24:19,315 peewee       DEBUG    ('SELECT COUNT(1) FROM (SELECT 1 FROM `user` AS `t1`) AS `_wrapped`', [])
+2018-10-14 11:24:19,321 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` ORDER BY `t1`.`id` LIMIT %s OFFSET %s', [20, 0])
+2018-10-14 11:24:19,324 werkzeug     INFO     127.0.0.1 - - [14/Oct/2018 11:24:19] "GET /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-14 11:29:57,704 werkzeug     INFO     127.0.0.1 - - [14/Oct/2018 11:29:57] "OPTIONS /getuserinfo?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1Mzk0ODczNzYsImlhdCI6MTUzOTQ4NzM2NiwiaXNzIjoia2VuIiwiZGF0YSI6eyJpZCI6MSwibG9naW5fdGltZSI6MTUzOTQ4NzM2Nn19.tISAbpusCP2FyL1zXdLxVkVKgEVJGpySyms_GNW9oiA HTTP/1.1" 200 -
+2018-10-14 11:29:57,722 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2018-10-14 11:29:57,729 werkzeug     INFO     127.0.0.1 - - [14/Oct/2018 11:29:57] "GET /getuserinfo?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1Mzk0ODczNzYsImlhdCI6MTUzOTQ4NzM2NiwiaXNzIjoia2VuIiwiZGF0YSI6eyJpZCI6MSwibG9naW5fdGltZSI6MTUzOTQ4NzM2Nn19.tISAbpusCP2FyL1zXdLxVkVKgEVJGpySyms_GNW9oiA HTTP/1.1" 200 -
+2018-10-14 11:29:58,030 werkzeug     INFO     127.0.0.1 - - [14/Oct/2018 11:29:58] "OPTIONS /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-14 11:29:58,060 peewee       DEBUG    ('SELECT COUNT(1) FROM (SELECT 1 FROM `user` AS `t1`) AS `_wrapped`', [])
+2018-10-14 11:29:58,065 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` ORDER BY `t1`.`id` LIMIT %s OFFSET %s', [20, 0])
+2018-10-14 11:29:58,070 werkzeug     INFO     127.0.0.1 - - [14/Oct/2018 11:29:58] "GET /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-14 11:30:08,040 werkzeug     INFO     127.0.0.1 - - [14/Oct/2018 11:30:08] "OPTIONS /getuserinfo?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1Mzk0ODczNzYsImlhdCI6MTUzOTQ4NzM2NiwiaXNzIjoia2VuIiwiZGF0YSI6eyJpZCI6MSwibG9naW5fdGltZSI6MTUzOTQ4NzM2Nn19.tISAbpusCP2FyL1zXdLxVkVKgEVJGpySyms_GNW9oiA HTTP/1.1" 200 -
+2018-10-14 11:30:08,053 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2018-10-14 11:30:08,061 werkzeug     INFO     127.0.0.1 - - [14/Oct/2018 11:30:08] "GET /getuserinfo?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1Mzk0ODczNzYsImlhdCI6MTUzOTQ4NzM2NiwiaXNzIjoia2VuIiwiZGF0YSI6eyJpZCI6MSwibG9naW5fdGltZSI6MTUzOTQ4NzM2Nn19.tISAbpusCP2FyL1zXdLxVkVKgEVJGpySyms_GNW9oiA HTTP/1.1" 200 -
+2018-10-14 11:30:08,344 werkzeug     INFO     127.0.0.1 - - [14/Oct/2018 11:30:08] "OPTIONS /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-14 11:30:08,359 peewee       DEBUG    ('SELECT COUNT(1) FROM (SELECT 1 FROM `user` AS `t1`) AS `_wrapped`', [])
+2018-10-14 11:30:08,365 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` ORDER BY `t1`.`id` LIMIT %s OFFSET %s', [20, 0])
+2018-10-14 11:30:08,369 werkzeug     INFO     127.0.0.1 - - [14/Oct/2018 11:30:08] "GET /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-14 11:30:33,213 werkzeug     INFO     127.0.0.1 - - [14/Oct/2018 11:30:33] "OPTIONS /getuser?page=1&limit=10&sort=%2Bid HTTP/1.1" 200 -
+2018-10-14 11:30:33,229 peewee       DEBUG    ('SELECT COUNT(1) FROM (SELECT 1 FROM `user` AS `t1`) AS `_wrapped`', [])
+2018-10-14 11:30:33,232 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` ORDER BY `t1`.`id` LIMIT %s OFFSET %s', [10, 0])
+2018-10-14 11:30:33,234 werkzeug     INFO     127.0.0.1 - - [14/Oct/2018 11:30:33] "GET /getuser?page=1&limit=10&sort=%2Bid HTTP/1.1" 200 -
+2018-10-14 11:32:47,076 werkzeug     INFO     127.0.0.1 - - [14/Oct/2018 11:32:47] "OPTIONS /getuser?page=1&limit=50&sort=%2Bid HTTP/1.1" 200 -
+2018-10-14 11:32:47,090 peewee       DEBUG    ('SELECT COUNT(1) FROM (SELECT 1 FROM `user` AS `t1`) AS `_wrapped`', [])
+2018-10-14 11:32:47,094 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` ORDER BY `t1`.`id` LIMIT %s OFFSET %s', [50, 0])
+2018-10-14 11:32:47,097 werkzeug     INFO     127.0.0.1 - - [14/Oct/2018 11:32:47] "GET /getuser?page=1&limit=50&sort=%2Bid HTTP/1.1" 200 -
+2018-10-14 11:32:50,816 werkzeug     INFO     127.0.0.1 - - [14/Oct/2018 11:32:50] "OPTIONS /getuser?page=1&limit=30&sort=%2Bid HTTP/1.1" 200 -
+2018-10-14 11:32:50,844 peewee       DEBUG    ('SELECT COUNT(1) FROM (SELECT 1 FROM `user` AS `t1`) AS `_wrapped`', [])
+2018-10-14 11:32:50,852 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` ORDER BY `t1`.`id` LIMIT %s OFFSET %s', [30, 0])
+2018-10-14 11:32:50,857 werkzeug     INFO     127.0.0.1 - - [14/Oct/2018 11:32:50] "GET /getuser?page=1&limit=30&sort=%2Bid HTTP/1.1" 200 -
+2018-10-14 11:32:54,188 werkzeug     INFO     127.0.0.1 - - [14/Oct/2018 11:32:54] "OPTIONS /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-14 11:32:54,204 peewee       DEBUG    ('SELECT COUNT(1) FROM (SELECT 1 FROM `user` AS `t1`) AS `_wrapped`', [])
+2018-10-14 11:32:54,207 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` ORDER BY `t1`.`id` LIMIT %s OFFSET %s', [20, 0])
+2018-10-14 11:32:54,209 werkzeug     INFO     127.0.0.1 - - [14/Oct/2018 11:32:54] "GET /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-14 11:32:56,390 werkzeug     INFO     127.0.0.1 - - [14/Oct/2018 11:32:56] "OPTIONS /getuser?page=2&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-14 11:32:56,405 peewee       DEBUG    ('SELECT COUNT(1) FROM (SELECT 1 FROM `user` AS `t1`) AS `_wrapped`', [])
+2018-10-14 11:32:56,412 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` ORDER BY `t1`.`id` LIMIT %s OFFSET %s', [20, 20])
+2018-10-14 11:32:56,417 werkzeug     INFO     127.0.0.1 - - [14/Oct/2018 11:32:56] "GET /getuser?page=2&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-14 11:33:22,416 werkzeug     INFO     127.0.0.1 - - [14/Oct/2018 11:33:22] "OPTIONS /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-14 11:33:22,426 peewee       DEBUG    ('SELECT COUNT(1) FROM (SELECT 1 FROM `user` AS `t1`) AS `_wrapped`', [])
+2018-10-14 11:33:22,431 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` ORDER BY `t1`.`id` LIMIT %s OFFSET %s', [20, 0])
+2018-10-14 11:33:22,434 werkzeug     INFO     127.0.0.1 - - [14/Oct/2018 11:33:22] "GET /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-14 11:33:32,571 werkzeug     INFO     127.0.0.1 - - [14/Oct/2018 11:33:32] "OPTIONS /getuser?page=1&limit=20&username=te&sort=%2Bid HTTP/1.1" 200 -
+2018-10-14 11:33:32,610 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` WHERE (`t1`.`username` = %s)', ['te'])
+2018-10-14 11:33:32,615 werkzeug     INFO     127.0.0.1 - - [14/Oct/2018 11:33:32] "GET /getuser?page=1&limit=20&username=te&sort=%2Bid HTTP/1.1" 200 -
+2018-10-14 11:33:39,785 werkzeug     INFO     127.0.0.1 - - [14/Oct/2018 11:33:39] "OPTIONS /getuser?page=1&limit=20&username=admin&sort=%2Bid HTTP/1.1" 200 -
+2018-10-14 11:33:39,800 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` WHERE (`t1`.`username` = %s)', ['admin'])
+2018-10-14 11:33:39,806 werkzeug     INFO     127.0.0.1 - - [14/Oct/2018 11:33:39] "GET /getuser?page=1&limit=20&username=admin&sort=%2Bid HTTP/1.1" 200 -
+2018-10-14 11:33:45,534 werkzeug     INFO     127.0.0.1 - - [14/Oct/2018 11:33:45] "OPTIONS /getuser?page=1&limit=20&username=admin&sort=%2Bid HTTP/1.1" 200 -
+2018-10-14 11:33:45,549 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` WHERE (`t1`.`username` = %s)', ['admin'])
+2018-10-14 11:33:45,555 werkzeug     INFO     127.0.0.1 - - [14/Oct/2018 11:33:45] "GET /getuser?page=1&limit=20&username=admin&sort=%2Bid HTTP/1.1" 200 -
+2018-10-14 11:34:41,335 werkzeug     INFO     127.0.0.1 - - [14/Oct/2018 11:34:41] "OPTIONS /getuser?page=1&limit=20&username=&sort=%2Bid HTTP/1.1" 200 -
+2018-10-14 11:34:41,355 peewee       DEBUG    ('SELECT COUNT(1) FROM (SELECT 1 FROM `user` AS `t1`) AS `_wrapped`', [])
+2018-10-14 11:34:41,360 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` ORDER BY `t1`.`id` LIMIT %s OFFSET %s', [20, 0])
+2018-10-14 11:34:41,364 werkzeug     INFO     127.0.0.1 - - [14/Oct/2018 11:34:41] "GET /getuser?page=1&limit=20&username=&sort=%2Bid HTTP/1.1" 200 -
+2018-10-14 11:40:34,827 werkzeug     INFO     127.0.0.1 - - [14/Oct/2018 11:40:34] "OPTIONS /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-14 11:40:34,841 peewee       DEBUG    ('SELECT COUNT(1) FROM (SELECT 1 FROM `user` AS `t1`) AS `_wrapped`', [])
+2018-10-14 11:40:34,846 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` ORDER BY `t1`.`id` LIMIT %s OFFSET %s', [20, 0])
+2018-10-14 11:40:34,848 werkzeug     INFO     127.0.0.1 - - [14/Oct/2018 11:40:34] "GET /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-14 11:48:58,565 werkzeug     INFO     127.0.0.1 - - [14/Oct/2018 11:48:58] "OPTIONS /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-14 11:48:58,578 peewee       DEBUG    ('SELECT COUNT(1) FROM (SELECT 1 FROM `user` AS `t1`) AS `_wrapped`', [])
+2018-10-14 11:48:58,585 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` ORDER BY `t1`.`id` LIMIT %s OFFSET %s', [20, 0])
+2018-10-14 11:48:58,592 werkzeug     INFO     127.0.0.1 - - [14/Oct/2018 11:48:58] "GET /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-14 11:50:04,776 werkzeug     INFO     127.0.0.1 - - [14/Oct/2018 11:50:04] "OPTIONS /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-14 11:50:04,785 peewee       DEBUG    ('SELECT COUNT(1) FROM (SELECT 1 FROM `user` AS `t1`) AS `_wrapped`', [])
+2018-10-14 11:50:04,792 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` ORDER BY `t1`.`id` LIMIT %s OFFSET %s', [20, 0])
+2018-10-14 11:50:04,795 werkzeug     INFO     127.0.0.1 - - [14/Oct/2018 11:50:04] "GET /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-14 12:00:21,592 werkzeug     INFO     127.0.0.1 - - [14/Oct/2018 12:00:21] "OPTIONS /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-14 12:00:21,602 peewee       DEBUG    ('SELECT COUNT(1) FROM (SELECT 1 FROM `user` AS `t1`) AS `_wrapped`', [])
+2018-10-14 12:00:21,609 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` ORDER BY `t1`.`id` LIMIT %s OFFSET %s', [20, 0])
+2018-10-14 12:00:21,612 werkzeug     INFO     127.0.0.1 - - [14/Oct/2018 12:00:21] "GET /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-14 16:26:07,729 werkzeug     INFO     127.0.0.1 - - [14/Oct/2018 16:26:07] "OPTIONS /getuser?page=2&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-14 16:26:07,742 peewee       DEBUG    ('SELECT COUNT(1) FROM (SELECT 1 FROM `user` AS `t1`) AS `_wrapped`', [])
+2018-10-14 16:26:07,752 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` ORDER BY `t1`.`id` LIMIT %s OFFSET %s', [20, 20])
+2018-10-14 16:26:07,755 werkzeug     INFO     127.0.0.1 - - [14/Oct/2018 16:26:07] "GET /getuser?page=2&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-14 16:26:11,095 werkzeug     INFO     127.0.0.1 - - [14/Oct/2018 16:26:11] "OPTIONS /getuser?page=1&limit=20&status=%E5%90%AF%E7%94%A8&sort=%2Bid HTTP/1.1" 200 -
+2018-10-14 16:26:11,129 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` WHERE (`t1`.`username` IS %s)', [None])
+2018-10-14 16:26:11,136 werkzeug     INFO     127.0.0.1 - - [14/Oct/2018 16:26:11] "GET /getuser?page=1&limit=20&status=%E5%90%AF%E7%94%A8&sort=%2Bid HTTP/1.1" 200 -
+2018-10-16 00:08:05,534 werkzeug     INFO     127.0.0.1 - - [16/Oct/2018 00:08:05] "OPTIONS /getuserinfo?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1Mzk0ODczNzYsImlhdCI6MTUzOTQ4NzM2NiwiaXNzIjoia2VuIiwiZGF0YSI6eyJpZCI6MSwibG9naW5fdGltZSI6MTUzOTQ4NzM2Nn19.tISAbpusCP2FyL1zXdLxVkVKgEVJGpySyms_GNW9oiA HTTP/1.1" 200 -
+2018-10-16 00:08:05,558 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2018-10-16 00:08:05,576 werkzeug     INFO     127.0.0.1 - - [16/Oct/2018 00:08:05] "GET /getuserinfo?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1Mzk0ODczNzYsImlhdCI6MTUzOTQ4NzM2NiwiaXNzIjoia2VuIiwiZGF0YSI6eyJpZCI6MSwibG9naW5fdGltZSI6MTUzOTQ4NzM2Nn19.tISAbpusCP2FyL1zXdLxVkVKgEVJGpySyms_GNW9oiA HTTP/1.1" 200 -
+2018-10-16 00:08:05,884 werkzeug     INFO     127.0.0.1 - - [16/Oct/2018 00:08:05] "OPTIONS /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-16 00:08:05,914 peewee       DEBUG    ('SELECT COUNT(1) FROM (SELECT 1 FROM `user` AS `t1`) AS `_wrapped`', [])
+2018-10-16 00:08:05,923 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` ORDER BY `t1`.`id` LIMIT %s OFFSET %s', [20, 0])
+2018-10-16 00:08:05,926 werkzeug     INFO     127.0.0.1 - - [16/Oct/2018 00:08:05] "GET /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-16 00:24:15,326 werkzeug     INFO     127.0.0.1 - - [16/Oct/2018 00:24:15] "OPTIONS /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-16 00:24:15,344 peewee       DEBUG    ('SELECT COUNT(1) FROM (SELECT 1 FROM `user` AS `t1`) AS `_wrapped`', [])
+2018-10-16 00:24:15,351 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` ORDER BY `t1`.`id` LIMIT %s OFFSET %s', [20, 0])
+2018-10-16 00:24:15,354 werkzeug     INFO     127.0.0.1 - - [16/Oct/2018 00:24:15] "GET /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-16 00:25:16,256 werkzeug     INFO     127.0.0.1 - - [16/Oct/2018 00:25:16] "OPTIONS /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-16 00:25:16,271 peewee       DEBUG    ('SELECT COUNT(1) FROM (SELECT 1 FROM `user` AS `t1`) AS `_wrapped`', [])
+2018-10-16 00:25:16,276 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` ORDER BY `t1`.`id` LIMIT %s OFFSET %s', [20, 0])
+2018-10-16 00:25:16,280 werkzeug     INFO     127.0.0.1 - - [16/Oct/2018 00:25:16] "GET /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-16 00:25:29,698 werkzeug     INFO     127.0.0.1 - - [16/Oct/2018 00:25:29] "OPTIONS /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-16 00:25:29,713 peewee       DEBUG    ('SELECT COUNT(1) FROM (SELECT 1 FROM `user` AS `t1`) AS `_wrapped`', [])
+2018-10-16 00:25:29,718 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` ORDER BY `t1`.`id` LIMIT %s OFFSET %s', [20, 0])
+2018-10-16 00:25:29,723 werkzeug     INFO     127.0.0.1 - - [16/Oct/2018 00:25:29] "GET /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-16 00:25:56,007 werkzeug     INFO     127.0.0.1 - - [16/Oct/2018 00:25:56] "OPTIONS /getuser?page=1&limit=20&status=0&sort=%2Bid HTTP/1.1" 200 -
+2018-10-16 00:25:56,049 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` WHERE (`t1`.`username` IS %s)', [None])
+2018-10-16 00:25:56,061 werkzeug     INFO     127.0.0.1 - - [16/Oct/2018 00:25:56] "GET /getuser?page=1&limit=20&status=0&sort=%2Bid HTTP/1.1" 200 -
+2018-10-16 00:27:04,553 werkzeug     INFO     127.0.0.1 - - [16/Oct/2018 00:27:04] "OPTIONS /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-16 00:27:04,568 peewee       DEBUG    ('SELECT COUNT(1) FROM (SELECT 1 FROM `user` AS `t1`) AS `_wrapped`', [])
+2018-10-16 00:27:04,575 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` ORDER BY `t1`.`id` LIMIT %s OFFSET %s', [20, 0])
+2018-10-16 00:27:04,581 werkzeug     INFO     127.0.0.1 - - [16/Oct/2018 00:27:04] "GET /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-16 00:27:25,324 werkzeug     INFO     127.0.0.1 - - [16/Oct/2018 00:27:25] "OPTIONS /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-16 00:27:25,339 peewee       DEBUG    ('SELECT COUNT(1) FROM (SELECT 1 FROM `user` AS `t1`) AS `_wrapped`', [])
+2018-10-16 00:27:25,345 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` ORDER BY `t1`.`id` LIMIT %s OFFSET %s', [20, 0])
+2018-10-16 00:27:25,349 werkzeug     INFO     127.0.0.1 - - [16/Oct/2018 00:27:25] "GET /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-16 00:27:55,133 werkzeug     INFO     127.0.0.1 - - [16/Oct/2018 00:27:55] "OPTIONS /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-16 00:27:55,173 peewee       DEBUG    ('SELECT COUNT(1) FROM (SELECT 1 FROM `user` AS `t1`) AS `_wrapped`', [])
+2018-10-16 00:27:55,185 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` ORDER BY `t1`.`id` LIMIT %s OFFSET %s', [20, 0])
+2018-10-16 00:27:55,191 werkzeug     INFO     127.0.0.1 - - [16/Oct/2018 00:27:55] "GET /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-16 00:29:04,052 werkzeug     INFO     127.0.0.1 - - [16/Oct/2018 00:29:04] "OPTIONS /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-16 00:29:04,080 peewee       DEBUG    ('SELECT COUNT(1) FROM (SELECT 1 FROM `user` AS `t1`) AS `_wrapped`', [])
+2018-10-16 00:29:04,088 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` ORDER BY `t1`.`id` LIMIT %s OFFSET %s', [20, 0])
+2018-10-16 00:29:04,093 werkzeug     INFO     127.0.0.1 - - [16/Oct/2018 00:29:04] "GET /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-16 00:30:13,797 werkzeug     INFO     127.0.0.1 - - [16/Oct/2018 00:30:13] "OPTIONS /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-16 00:30:13,807 peewee       DEBUG    ('SELECT COUNT(1) FROM (SELECT 1 FROM `user` AS `t1`) AS `_wrapped`', [])
+2018-10-16 00:30:13,811 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` ORDER BY `t1`.`id` LIMIT %s OFFSET %s', [20, 0])
+2018-10-16 00:30:13,815 werkzeug     INFO     127.0.0.1 - - [16/Oct/2018 00:30:13] "GET /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-16 00:30:48,360 werkzeug     INFO     127.0.0.1 - - [16/Oct/2018 00:30:48] "OPTIONS /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-16 00:30:48,405 peewee       DEBUG    ('SELECT COUNT(1) FROM (SELECT 1 FROM `user` AS `t1`) AS `_wrapped`', [])
+2018-10-16 00:30:48,409 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` ORDER BY `t1`.`id` LIMIT %s OFFSET %s', [20, 0])
+2018-10-16 00:30:48,412 werkzeug     INFO     127.0.0.1 - - [16/Oct/2018 00:30:48] "GET /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-16 00:30:53,050 werkzeug     INFO     127.0.0.1 - - [16/Oct/2018 00:30:53] "OPTIONS /getuser?page=1&limit=20&status=0&sort=%2Bid HTTP/1.1" 200 -
+2018-10-16 00:30:53,073 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` WHERE (`t1`.`username` IS %s)', [None])
+2018-10-16 00:30:53,078 werkzeug     INFO     127.0.0.1 - - [16/Oct/2018 00:30:53] "GET /getuser?page=1&limit=20&status=0&sort=%2Bid HTTP/1.1" 200 -
+2018-10-16 00:32:36,796 werkzeug     INFO     127.0.0.1 - - [16/Oct/2018 00:32:36] "OPTIONS /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-16 00:32:36,803 peewee       DEBUG    ('SELECT COUNT(1) FROM (SELECT 1 FROM `user` AS `t1`) AS `_wrapped`', [])
+2018-10-16 00:32:36,809 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` ORDER BY `t1`.`id` LIMIT %s OFFSET %s', [20, 0])
+2018-10-16 00:32:36,811 werkzeug     INFO     127.0.0.1 - - [16/Oct/2018 00:32:36] "GET /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-16 00:32:54,061 werkzeug     INFO     127.0.0.1 - - [16/Oct/2018 00:32:54] "OPTIONS /getuser?page=1&limit=20&username=admin&status=0&sort=%2Bid&userrole=0 HTTP/1.1" 200 -
+2018-10-16 00:32:54,094 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` WHERE (`t1`.`username` = %s)', ['admin'])
+2018-10-16 00:32:54,102 werkzeug     INFO     127.0.0.1 - - [16/Oct/2018 00:32:54] "GET /getuser?page=1&limit=20&username=admin&status=0&sort=%2Bid&userrole=0 HTTP/1.1" 200 -
+2018-10-16 00:34:03,536 werkzeug     INFO      * Detected change in '/Users/oliver/Flask-Apitest-Server/app/rest/usermanage.py', reloading
+2018-10-16 00:34:03,637 werkzeug     INFO      * Restarting with stat
+2018-10-16 00:34:04,362 werkzeug     WARNING   * Debugger is active!
+2018-10-16 00:34:04,382 werkzeug     INFO      * Debugger PIN: 339-093-568
+2018-10-16 00:34:05,499 werkzeug     INFO     127.0.0.1 - - [16/Oct/2018 00:34:05] "OPTIONS /getuser?page=1&limit=20&username=admin&status=0&sort=%2Bid&userrole=0 HTTP/1.1" 200 -
+2018-10-16 00:34:05,520 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` WHERE (`t1`.`username` = %s)', ['admin'])
+2018-10-16 00:34:05,525 werkzeug     INFO     127.0.0.1 - - [16/Oct/2018 00:34:05] "GET /getuser?page=1&limit=20&username=admin&status=0&sort=%2Bid&userrole=0 HTTP/1.1" 200 -
+2018-10-16 00:34:40,915 werkzeug     INFO      * Detected change in '/Users/oliver/Flask-Apitest-Server/app/rest/usermanage.py', reloading
+2018-10-16 00:34:40,963 werkzeug     INFO      * Restarting with stat
+2018-10-16 00:34:41,364 werkzeug     WARNING   * Debugger is active!
+2018-10-16 00:34:41,375 werkzeug     INFO      * Debugger PIN: 339-093-568
+2018-10-16 00:34:43,133 werkzeug     INFO     127.0.0.1 - - [16/Oct/2018 00:34:43] "OPTIONS /getuser?page=1&limit=20&username=admin&status=0&sort=%2Bid&userrole=0 HTTP/1.1" 200 -
+2018-10-16 00:34:43,162 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` WHERE (`t1`.`username` = %s)', ['admin'])
+2018-10-16 00:34:43,167 werkzeug     INFO     127.0.0.1 - - [16/Oct/2018 00:34:43] "GET /getuser?page=1&limit=20&username=admin&status=0&sort=%2Bid&userrole=0 HTTP/1.1" 200 -
+2018-10-16 00:34:59,629 werkzeug     INFO      * Detected change in '/Users/oliver/Flask-Apitest-Server/app/rest/usermanage.py', reloading
+2018-10-16 00:34:59,677 werkzeug     INFO      * Restarting with stat
+2018-10-16 00:35:00,052 werkzeug     WARNING   * Debugger is active!
+2018-10-16 00:35:00,060 werkzeug     INFO      * Debugger PIN: 339-093-568
+2018-10-16 00:36:00,041 werkzeug     INFO     127.0.0.1 - - [16/Oct/2018 00:36:00] "OPTIONS /getuser?page=1&limit=20&username=admin&status=0&sort=%2Bid&userrole=0 HTTP/1.1" 200 -
+2018-10-16 00:36:00,069 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` WHERE (`t1`.`username` = %s)', ['admin'])
+2018-10-16 00:36:00,080 werkzeug     INFO     127.0.0.1 - - [16/Oct/2018 00:36:00] "GET /getuser?page=1&limit=20&username=admin&status=0&sort=%2Bid&userrole=0 HTTP/1.1" 200 -
+2018-10-16 00:36:13,498 werkzeug     INFO     127.0.0.1 - - [16/Oct/2018 00:36:13] "OPTIONS /getuser?page=1&limit=20&username=admin&status=0&sort=%2Bid&userrole=0 HTTP/1.1" 200 -
+2018-10-16 00:36:13,527 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` WHERE (`t1`.`username` = %s)', ['admin'])
+2018-10-16 00:36:13,531 werkzeug     INFO     127.0.0.1 - - [16/Oct/2018 00:36:13] "GET /getuser?page=1&limit=20&username=admin&status=0&sort=%2Bid&userrole=0 HTTP/1.1" 200 -
+2018-10-16 00:36:26,184 werkzeug     INFO     127.0.0.1 - - [16/Oct/2018 00:36:26] "OPTIONS /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-16 00:36:26,199 peewee       DEBUG    ('SELECT COUNT(1) FROM (SELECT 1 FROM `user` AS `t1`) AS `_wrapped`', [])
+2018-10-16 00:36:26,206 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` ORDER BY `t1`.`id` LIMIT %s OFFSET %s', [20, 0])
+2018-10-16 00:36:26,214 werkzeug     INFO     127.0.0.1 - - [16/Oct/2018 00:36:26] "GET /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-16 00:36:42,377 werkzeug     INFO     127.0.0.1 - - [16/Oct/2018 00:36:42] "OPTIONS /getuserinfo?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1Mzk0ODczNzYsImlhdCI6MTUzOTQ4NzM2NiwiaXNzIjoia2VuIiwiZGF0YSI6eyJpZCI6MSwibG9naW5fdGltZSI6MTUzOTQ4NzM2Nn19.tISAbpusCP2FyL1zXdLxVkVKgEVJGpySyms_GNW9oiA HTTP/1.1" 200 -
+2018-10-16 00:36:42,534 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2018-10-16 00:36:42,539 werkzeug     INFO     127.0.0.1 - - [16/Oct/2018 00:36:42] "GET /getuserinfo?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1Mzk0ODczNzYsImlhdCI6MTUzOTQ4NzM2NiwiaXNzIjoia2VuIiwiZGF0YSI6eyJpZCI6MSwibG9naW5fdGltZSI6MTUzOTQ4NzM2Nn19.tISAbpusCP2FyL1zXdLxVkVKgEVJGpySyms_GNW9oiA HTTP/1.1" 200 -
+2018-10-16 00:36:42,950 werkzeug     INFO     127.0.0.1 - - [16/Oct/2018 00:36:42] "OPTIONS /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-16 00:36:42,969 peewee       DEBUG    ('SELECT COUNT(1) FROM (SELECT 1 FROM `user` AS `t1`) AS `_wrapped`', [])
+2018-10-16 00:36:42,974 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` ORDER BY `t1`.`id` LIMIT %s OFFSET %s', [20, 0])
+2018-10-16 00:36:42,979 werkzeug     INFO     127.0.0.1 - - [16/Oct/2018 00:36:42] "GET /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-16 00:37:46,420 werkzeug     INFO     127.0.0.1 - - [16/Oct/2018 00:37:46] "OPTIONS /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-16 00:37:46,432 peewee       DEBUG    ('SELECT COUNT(1) FROM (SELECT 1 FROM `user` AS `t1`) AS `_wrapped`', [])
+2018-10-16 00:37:46,436 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` ORDER BY `t1`.`id` LIMIT %s OFFSET %s', [20, 0])
+2018-10-16 00:37:46,439 werkzeug     INFO     127.0.0.1 - - [16/Oct/2018 00:37:46] "GET /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-16 00:40:47,904 werkzeug     INFO     127.0.0.1 - - [16/Oct/2018 00:40:47] "OPTIONS /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-16 00:40:47,924 peewee       DEBUG    ('SELECT COUNT(1) FROM (SELECT 1 FROM `user` AS `t1`) AS `_wrapped`', [])
+2018-10-16 00:40:47,928 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` ORDER BY `t1`.`id` LIMIT %s OFFSET %s', [20, 0])
+2018-10-16 00:40:47,931 werkzeug     INFO     127.0.0.1 - - [16/Oct/2018 00:40:47] "GET /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-16 00:43:48,069 werkzeug     INFO     127.0.0.1 - - [16/Oct/2018 00:43:48] "OPTIONS /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-16 00:43:48,087 peewee       DEBUG    ('SELECT COUNT(1) FROM (SELECT 1 FROM `user` AS `t1`) AS `_wrapped`', [])
+2018-10-16 00:43:48,090 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` ORDER BY `t1`.`id` LIMIT %s OFFSET %s', [20, 0])
+2018-10-16 00:43:48,093 werkzeug     INFO     127.0.0.1 - - [16/Oct/2018 00:43:48] "GET /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-16 00:44:01,844 werkzeug     INFO     127.0.0.1 - - [16/Oct/2018 00:44:01] "OPTIONS /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-16 00:44:01,857 peewee       DEBUG    ('SELECT COUNT(1) FROM (SELECT 1 FROM `user` AS `t1`) AS `_wrapped`', [])
+2018-10-16 00:44:01,862 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` ORDER BY `t1`.`id` LIMIT %s OFFSET %s', [20, 0])
+2018-10-16 00:44:01,865 werkzeug     INFO     127.0.0.1 - - [16/Oct/2018 00:44:01] "GET /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-16 00:44:08,595 werkzeug     INFO     127.0.0.1 - - [16/Oct/2018 00:44:08] "OPTIONS /getuserinfo?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1Mzk0ODczNzYsImlhdCI6MTUzOTQ4NzM2NiwiaXNzIjoia2VuIiwiZGF0YSI6eyJpZCI6MSwibG9naW5fdGltZSI6MTUzOTQ4NzM2Nn19.tISAbpusCP2FyL1zXdLxVkVKgEVJGpySyms_GNW9oiA HTTP/1.1" 200 -
+2018-10-16 00:44:08,765 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2018-10-16 00:44:08,770 werkzeug     INFO     127.0.0.1 - - [16/Oct/2018 00:44:08] "GET /getuserinfo?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1Mzk0ODczNzYsImlhdCI6MTUzOTQ4NzM2NiwiaXNzIjoia2VuIiwiZGF0YSI6eyJpZCI6MSwibG9naW5fdGltZSI6MTUzOTQ4NzM2Nn19.tISAbpusCP2FyL1zXdLxVkVKgEVJGpySyms_GNW9oiA HTTP/1.1" 200 -
+2018-10-16 00:44:09,196 werkzeug     INFO     127.0.0.1 - - [16/Oct/2018 00:44:09] "OPTIONS /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-16 00:44:09,233 peewee       DEBUG    ('SELECT COUNT(1) FROM (SELECT 1 FROM `user` AS `t1`) AS `_wrapped`', [])
+2018-10-16 00:44:09,239 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` ORDER BY `t1`.`id` LIMIT %s OFFSET %s', [20, 0])
+2018-10-16 00:44:09,243 werkzeug     INFO     127.0.0.1 - - [16/Oct/2018 00:44:09] "GET /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-16 00:47:37,400 werkzeug     INFO     127.0.0.1 - - [16/Oct/2018 00:47:37] "OPTIONS /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-16 00:47:37,417 peewee       DEBUG    ('SELECT COUNT(1) FROM (SELECT 1 FROM `user` AS `t1`) AS `_wrapped`', [])
+2018-10-16 00:47:37,420 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` ORDER BY `t1`.`id` LIMIT %s OFFSET %s', [20, 0])
+2018-10-16 00:47:37,423 werkzeug     INFO     127.0.0.1 - - [16/Oct/2018 00:47:37] "GET /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-16 00:47:46,183 werkzeug     INFO     127.0.0.1 - - [16/Oct/2018 00:47:46] "OPTIONS /getuserinfo?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1Mzk0ODczNzYsImlhdCI6MTUzOTQ4NzM2NiwiaXNzIjoia2VuIiwiZGF0YSI6eyJpZCI6MSwibG9naW5fdGltZSI6MTUzOTQ4NzM2Nn19.tISAbpusCP2FyL1zXdLxVkVKgEVJGpySyms_GNW9oiA HTTP/1.1" 200 -
+2018-10-16 00:47:46,356 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2018-10-16 00:47:46,361 werkzeug     INFO     127.0.0.1 - - [16/Oct/2018 00:47:46] "GET /getuserinfo?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1Mzk0ODczNzYsImlhdCI6MTUzOTQ4NzM2NiwiaXNzIjoia2VuIiwiZGF0YSI6eyJpZCI6MSwibG9naW5fdGltZSI6MTUzOTQ4NzM2Nn19.tISAbpusCP2FyL1zXdLxVkVKgEVJGpySyms_GNW9oiA HTTP/1.1" 200 -
+2018-10-16 00:49:08,322 werkzeug     INFO     127.0.0.1 - - [16/Oct/2018 00:49:08] "OPTIONS /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-16 00:49:08,334 peewee       DEBUG    ('SELECT COUNT(1) FROM (SELECT 1 FROM `user` AS `t1`) AS `_wrapped`', [])
+2018-10-16 00:49:08,338 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` ORDER BY `t1`.`id` LIMIT %s OFFSET %s', [20, 0])
+2018-10-16 00:49:08,340 werkzeug     INFO     127.0.0.1 - - [16/Oct/2018 00:49:08] "GET /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-16 00:49:15,934 werkzeug     INFO     127.0.0.1 - - [16/Oct/2018 00:49:15] "OPTIONS /getuserinfo?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1Mzk0ODczNzYsImlhdCI6MTUzOTQ4NzM2NiwiaXNzIjoia2VuIiwiZGF0YSI6eyJpZCI6MSwibG9naW5fdGltZSI6MTUzOTQ4NzM2Nn19.tISAbpusCP2FyL1zXdLxVkVKgEVJGpySyms_GNW9oiA HTTP/1.1" 200 -
+2018-10-16 00:49:16,125 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2018-10-16 00:49:16,131 werkzeug     INFO     127.0.0.1 - - [16/Oct/2018 00:49:16] "GET /getuserinfo?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1Mzk0ODczNzYsImlhdCI6MTUzOTQ4NzM2NiwiaXNzIjoia2VuIiwiZGF0YSI6eyJpZCI6MSwibG9naW5fdGltZSI6MTUzOTQ4NzM2Nn19.tISAbpusCP2FyL1zXdLxVkVKgEVJGpySyms_GNW9oiA HTTP/1.1" 200 -
+2018-10-16 00:49:16,486 werkzeug     INFO     127.0.0.1 - - [16/Oct/2018 00:49:16] "OPTIONS /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-16 00:49:16,508 peewee       DEBUG    ('SELECT COUNT(1) FROM (SELECT 1 FROM `user` AS `t1`) AS `_wrapped`', [])
+2018-10-16 00:49:16,512 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` ORDER BY `t1`.`id` LIMIT %s OFFSET %s', [20, 0])
+2018-10-16 00:49:16,515 werkzeug     INFO     127.0.0.1 - - [16/Oct/2018 00:49:16] "GET /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-16 00:49:58,165 werkzeug     INFO     127.0.0.1 - - [16/Oct/2018 00:49:58] "OPTIONS /getuserinfo?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1Mzk0ODczNzYsImlhdCI6MTUzOTQ4NzM2NiwiaXNzIjoia2VuIiwiZGF0YSI6eyJpZCI6MSwibG9naW5fdGltZSI6MTUzOTQ4NzM2Nn19.tISAbpusCP2FyL1zXdLxVkVKgEVJGpySyms_GNW9oiA HTTP/1.1" 200 -
+2018-10-16 00:49:58,322 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`password`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` WHERE (`t1`.`id` = %s) LIMIT %s OFFSET %s', [1, 1, 0])
+2018-10-16 00:49:58,329 werkzeug     INFO     127.0.0.1 - - [16/Oct/2018 00:49:58] "GET /getuserinfo?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE1Mzk0ODczNzYsImlhdCI6MTUzOTQ4NzM2NiwiaXNzIjoia2VuIiwiZGF0YSI6eyJpZCI6MSwibG9naW5fdGltZSI6MTUzOTQ4NzM2Nn19.tISAbpusCP2FyL1zXdLxVkVKgEVJGpySyms_GNW9oiA HTTP/1.1" 200 -
+2018-10-16 00:49:58,690 werkzeug     INFO     127.0.0.1 - - [16/Oct/2018 00:49:58] "OPTIONS /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-16 00:49:58,720 peewee       DEBUG    ('SELECT COUNT(1) FROM (SELECT 1 FROM `user` AS `t1`) AS `_wrapped`', [])
+2018-10-16 00:49:58,723 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` ORDER BY `t1`.`id` LIMIT %s OFFSET %s', [20, 0])
+2018-10-16 00:49:58,727 werkzeug     INFO     127.0.0.1 - - [16/Oct/2018 00:49:58] "GET /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-16 00:53:30,006 werkzeug     INFO      * Detected change in '/Users/oliver/Flask-Apitest-Server/app/rest/usermanage.py', reloading
+2018-10-16 00:53:30,068 werkzeug     INFO      * Restarting with stat
+2018-10-16 00:53:30,465 werkzeug     WARNING   * Debugger is active!
+2018-10-16 00:53:30,473 werkzeug     INFO      * Debugger PIN: 339-093-568
+2018-10-16 00:53:37,739 werkzeug     INFO     127.0.0.1 - - [16/Oct/2018 00:53:37] "OPTIONS /getuser?page=1&limit=20&status=0&sort=%2Bid HTTP/1.1" 200 -
+2018-10-16 00:53:37,769 peewee       DEBUG    ('SELECT COUNT(1) FROM (SELECT 1 FROM `user` AS `t1`) AS `_wrapped`', [])
+2018-10-16 00:53:37,774 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` ORDER BY `t1`.`id` LIMIT %s OFFSET %s', [20, 0])
+2018-10-16 00:53:37,780 werkzeug     INFO     127.0.0.1 - - [16/Oct/2018 00:53:37] "GET /getuser?page=1&limit=20&status=0&sort=%2Bid HTTP/1.1" 200 -
+2018-10-16 00:53:48,490 werkzeug     INFO     127.0.0.1 - - [16/Oct/2018 00:53:48] "OPTIONS /getuser?page=1&limit=20&username=test&status=0&sort=%2Bid HTTP/1.1" 200 -
+2018-10-16 00:53:48,520 peewee       DEBUG    ('SELECT COUNT(1) FROM (SELECT 1 FROM `user` AS `t1`) AS `_wrapped`', [])
+2018-10-16 00:53:48,524 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` ORDER BY `t1`.`id` LIMIT %s OFFSET %s', [20, 0])
+2018-10-16 00:53:48,527 werkzeug     INFO     127.0.0.1 - - [16/Oct/2018 00:53:48] "GET /getuser?page=1&limit=20&username=test&status=0&sort=%2Bid HTTP/1.1" 200 -
+2018-10-16 00:54:25,031 werkzeug     INFO     127.0.0.1 - - [16/Oct/2018 00:54:25] "OPTIONS /getuser?page=1&limit=20&username=test&status=0&sort=%2Bid HTTP/1.1" 200 -
+2018-10-16 00:54:25,065 peewee       DEBUG    ('SELECT COUNT(1) FROM (SELECT 1 FROM `user` AS `t1`) AS `_wrapped`', [])
+2018-10-16 00:54:25,069 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` ORDER BY `t1`.`id` LIMIT %s OFFSET %s', [20, 0])
+2018-10-16 00:54:25,074 werkzeug     INFO     127.0.0.1 - - [16/Oct/2018 00:54:25] "GET /getuser?page=1&limit=20&username=test&status=0&sort=%2Bid HTTP/1.1" 200 -
+2018-10-16 00:54:45,727 werkzeug     INFO     127.0.0.1 - - [16/Oct/2018 00:54:45] "OPTIONS /getuser?page=1&limit=20&username=&status=0&sort=%2Bid HTTP/1.1" 200 -
+2018-10-16 00:54:45,750 peewee       DEBUG    ('SELECT COUNT(1) FROM (SELECT 1 FROM `user` AS `t1`) AS `_wrapped`', [])
+2018-10-16 00:54:45,755 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` ORDER BY `t1`.`id` LIMIT %s OFFSET %s', [20, 0])
+2018-10-16 00:54:45,759 werkzeug     INFO     127.0.0.1 - - [16/Oct/2018 00:54:45] "GET /getuser?page=1&limit=20&username=&status=0&sort=%2Bid HTTP/1.1" 200 -
+2018-10-16 00:54:59,970 werkzeug     INFO     127.0.0.1 - - [16/Oct/2018 00:54:59] "OPTIONS /getuser?page=1&limit=20&username=admin&status=&sort=%2Bid HTTP/1.1" 200 -
+2018-10-16 00:54:59,997 peewee       DEBUG    ('SELECT COUNT(1) FROM (SELECT 1 FROM `user` AS `t1`) AS `_wrapped`', [])
+2018-10-16 00:55:00,005 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` ORDER BY `t1`.`id` LIMIT %s OFFSET %s', [20, 0])
+2018-10-16 00:55:00,009 werkzeug     INFO     127.0.0.1 - - [16/Oct/2018 00:55:00] "GET /getuser?page=1&limit=20&username=admin&status=&sort=%2Bid HTTP/1.1" 200 -
+2018-10-16 00:55:37,222 werkzeug     INFO      * Detected change in '/Users/oliver/Flask-Apitest-Server/app/rest/usermanage.py', reloading
+2018-10-16 00:55:37,276 werkzeug     INFO      * Restarting with stat
+2018-10-16 00:55:37,843 werkzeug     WARNING   * Debugger is active!
+2018-10-16 00:55:37,853 werkzeug     INFO      * Debugger PIN: 339-093-568
+2018-10-16 00:55:38,544 werkzeug     INFO     127.0.0.1 - - [16/Oct/2018 00:55:38] "OPTIONS /getuser?page=1&limit=20&username=admin&status=&sort=%2Bid HTTP/1.1" 200 -
+2018-10-16 00:55:38,575 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` WHERE (`t1`.`username` = %s)', ['admin'])
+2018-10-16 00:55:38,582 werkzeug     INFO     127.0.0.1 - - [16/Oct/2018 00:55:38] "GET /getuser?page=1&limit=20&username=admin&status=&sort=%2Bid HTTP/1.1" 200 -
+2018-10-16 00:56:25,497 werkzeug     INFO      * Detected change in '/Users/oliver/Flask-Apitest-Server/app/rest/usermanage.py', reloading
+2018-10-16 00:56:25,589 werkzeug     INFO      * Restarting with stat
+2018-10-16 00:56:26,001 werkzeug     WARNING   * Debugger is active!
+2018-10-16 00:56:26,009 werkzeug     INFO      * Debugger PIN: 339-093-568
+2018-10-16 00:56:48,347 werkzeug     INFO      * Detected change in '/Users/oliver/Flask-Apitest-Server/app/rest/usermanage.py', reloading
+2018-10-16 00:56:48,398 werkzeug     INFO      * Restarting with stat
+2018-10-16 00:58:17,551 werkzeug     INFO      * Running on http://127.0.0.1:5000/ (Press CTRL+C to quit)
+2018-10-16 00:58:17,557 werkzeug     INFO      * Restarting with stat
+2018-10-16 00:58:17,817 werkzeug     WARNING   * Debugger is active!
+2018-10-16 00:58:17,827 werkzeug     INFO      * Debugger PIN: 339-093-568
+2018-10-16 00:58:34,773 werkzeug     INFO     127.0.0.1 - - [16/Oct/2018 00:58:34] "OPTIONS /getuser?page=1&limit=20&username=admin&status=1&sort=%2Bid&userrole=0 HTTP/1.1" 200 -
+2018-10-16 00:58:34,800 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` WHERE (((`t1`.`username` = %s) AND (`t1`.`role_id` = %s)) AND (`t1`.`status` = %s))', ['admin', 0, 1])
+2018-10-16 00:58:34,805 werkzeug     INFO     127.0.0.1 - - [16/Oct/2018 00:58:34] "GET /getuser?page=1&limit=20&username=admin&status=1&sort=%2Bid&userrole=0 HTTP/1.1" 200 -
+2018-10-16 00:58:45,125 werkzeug     INFO     127.0.0.1 - - [16/Oct/2018 00:58:45] "OPTIONS /getuser?page=1&limit=20&username=test&status=1&sort=%2Bid&userrole=0 HTTP/1.1" 200 -
+2018-10-16 00:58:45,144 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` WHERE (((`t1`.`username` = %s) AND (`t1`.`role_id` = %s)) AND (`t1`.`status` = %s))', ['test', 0, 1])
+2018-10-16 00:58:45,148 werkzeug     INFO     127.0.0.1 - - [16/Oct/2018 00:58:45] "GET /getuser?page=1&limit=20&username=test&status=1&sort=%2Bid&userrole=0 HTTP/1.1" 200 -
+2018-10-16 00:58:50,137 werkzeug     INFO     127.0.0.1 - - [16/Oct/2018 00:58:50] "OPTIONS /getuser?page=1&limit=20&username=test&status=0&sort=%2Bid&userrole=0 HTTP/1.1" 200 -
+2018-10-16 00:58:50,153 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` WHERE (((`t1`.`username` = %s) AND (`t1`.`role_id` = %s)) AND (`t1`.`status` = %s))', ['test', 0, 0])
+2018-10-16 00:58:50,159 werkzeug     INFO     127.0.0.1 - - [16/Oct/2018 00:58:50] "GET /getuser?page=1&limit=20&username=test&status=0&sort=%2Bid&userrole=0 HTTP/1.1" 200 -
+2018-10-16 00:58:58,114 werkzeug     INFO     127.0.0.1 - - [16/Oct/2018 00:58:58] "OPTIONS /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-16 00:58:58,129 peewee       DEBUG    ('SELECT COUNT(1) FROM (SELECT 1 FROM `user` AS `t1`) AS `_wrapped`', [])
+2018-10-16 00:58:58,133 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` ORDER BY `t1`.`id` LIMIT %s OFFSET %s', [20, 0])
+2018-10-16 00:58:58,135 werkzeug     INFO     127.0.0.1 - - [16/Oct/2018 00:58:58] "GET /getuser?page=1&limit=20&sort=%2Bid HTTP/1.1" 200 -
+2018-10-16 00:59:03,901 werkzeug     INFO     127.0.0.1 - - [16/Oct/2018 00:59:03] "OPTIONS /getuser?page=1&limit=20&status=1&sort=%2Bid&userrole=1 HTTP/1.1" 200 -
+2018-10-16 00:59:03,948 peewee       DEBUG    ('SELECT COUNT(1) FROM (SELECT 1 FROM `user` AS `t1`) AS `_wrapped`', [])
+2018-10-16 00:59:03,951 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` ORDER BY `t1`.`id` LIMIT %s OFFSET %s', [20, 0])
+2018-10-16 00:59:03,954 werkzeug     INFO     127.0.0.1 - - [16/Oct/2018 00:59:03] "GET /getuser?page=1&limit=20&status=1&sort=%2Bid&userrole=1 HTTP/1.1" 200 -
+2018-10-16 01:02:33,146 werkzeug     INFO      * Detected change in '/Users/oliver/Flask-Apitest-Server/app/rest/usermanage.py', reloading
+2018-10-16 01:02:33,197 werkzeug     INFO      * Restarting with stat
+2018-10-16 01:02:33,637 werkzeug     WARNING   * Debugger is active!
+2018-10-16 01:02:33,644 werkzeug     INFO      * Debugger PIN: 339-093-568
+2018-10-16 01:02:35,793 werkzeug     INFO     127.0.0.1 - - [16/Oct/2018 01:02:35] "OPTIONS /getuser?page=1&limit=20&status=1&sort=%2Bid&userrole=1 HTTP/1.1" 200 -
+2018-10-16 01:02:35,824 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` WHERE (((`t1`.`username` IS %s) AND (`t1`.`role_id` = %s)) AND (`t1`.`status` = %s))', [None, 1, 1])
+2018-10-16 01:02:35,830 werkzeug     INFO     127.0.0.1 - - [16/Oct/2018 01:02:35] "GET /getuser?page=1&limit=20&status=1&sort=%2Bid&userrole=1 HTTP/1.1" 200 -
+2018-10-16 01:02:42,005 werkzeug     INFO     127.0.0.1 - - [16/Oct/2018 01:02:42] "OPTIONS /getuser?page=1&limit=20&status=0&sort=%2Bid&userrole=1 HTTP/1.1" 200 -
+2018-10-16 01:02:42,020 peewee       DEBUG    ('SELECT `t1`.`id`, `t1`.`username`, `t1`.`status`, `t1`.`role_id` FROM `user` AS `t1` WHERE (((`t1`.`username` IS %s) AND (`t1`.`role_id` = %s)) AND (`t1`.`status` = %s))', [None, 1, 0])
+2018-10-16 01:02:42,025 werkzeug     INFO     127.0.0.1 - - [16/Oct/2018 01:02:42] "GET /getuser?page=1&limit=20&status=0&sort=%2Bid&userrole=1 HTTP/1.1" 200 -
