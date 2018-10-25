@@ -91,9 +91,6 @@ def get_user():
         return response(data={'userlist':common.query_to_list(query),'totalElements': total_count},status_code=200)
 
 
-
-
-# @rest.route('/user/update',methods=['POST'])
 @rest.route('/user/update',methods=['POST'])
 def update_user():
     '''
@@ -113,4 +110,14 @@ def update_user():
     
     return response(msg='success',status_code=200)
 
-
+@rest.route('/user/edituser',methods=['POST'])
+def edit_user():
+    user_id = request.form.get('id')
+    user_name = request.form.get('username')
+    status = request.form.get('status')
+    role_id = request.form.get('userrole')
+    try:
+        User.update(status = status,username = user_name,role_id = role_id).where(User.id == user_id).execute()
+    except:
+        return response(msg='Request params not valid',status_code=404)
+    return response(msg='success',status_code=200)
