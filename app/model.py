@@ -30,7 +30,8 @@ class BaseModel(Model):
 
 # 用户表
 class User(UserMixin, BaseModel):
-    
+
+    id = IntegerField(verbose_name='id',null=False)
     username = CharField(verbose_name='用户名',null=False)  # 用户名
     password = CharField(verbose_name='密码',null=False)  # 密码
     status = IntegerField(verbose_name='状态',null=False,default=0)#状态-0正常-1禁用
