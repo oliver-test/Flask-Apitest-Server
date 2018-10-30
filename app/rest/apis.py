@@ -36,6 +36,7 @@ request_field = {
 }
 
 query_args = {
+    'id':fields.Int(),
     'api_name': fields.Str(),
     'group': fields.Str(),
     'status': fields.Str(),
@@ -74,11 +75,20 @@ def get_apilist():
     return response(data={'apilist':common.query_to_list(apilist),'totalElements': apilist.count()},status_code=200)
 
 @rest.route('/apis/updateapi',methods=['POST'])
-def update_api():
+def update_api_status():
     '''
     修改状态接口
     '''
     args = parser.parse(query_args, request)
+    try:
+        Api.update(Status = args.get('status'),Update_time = datetime.datetime.now()).where(Api.id == args.get('id')).execute()
+        # User.update({User.status : status}).where(User.id == user_id).execute()
+    except:
+        return response(msg='Request params not valid',status_code=404)
+    
+    return response(msg='success',status_code=200)
+
+    
     
 
 
