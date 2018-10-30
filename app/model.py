@@ -34,7 +34,7 @@ class User(UserMixin, BaseModel):
     id = IntegerField(verbose_name='id',null=False)
     username = CharField(verbose_name='用户名',null=False)  # 用户名
     password = CharField(verbose_name='密码',null=False)  # 密码
-    status = IntegerField(verbose_name='状态',null=False,default=0)#状态-0正常-1禁用
+    status = IntegerField(verbose_name='状态',null=False,default=0)#状态-0启用-1禁用-10删除
     role_id = IntegerField(verbose_name='角色')#角色-1用户-0管理员
 
     @staticmethod
@@ -45,18 +45,20 @@ class User(UserMixin, BaseModel):
         return check_password_hash(self.password, raw_password)
 
 class Api(BaseModel):
-    api_ame = CharField(verbose_name='接口名称',null=False) 
+
+    api_name = CharField(verbose_name='接口名称',null=False)
+    group = CharField(verbose_name='模块',null=False) 
     url = CharField(verbose_name='接口地址',null=False)
-    Method = CharField(verbose_name='请求方法',null=False,default='GET')
+    Method = CharField(verbose_name='请求方法',null=False,default='GET')#请求方法-GET-POST
     Hearders = CharField(verbose_name='请求头',null=False)
     Body = CharField(verbose_name='请求参数',null=False)
     Params = CharField(verbose_name='参数',null=False)
     Cookies = CharField(verbose_name='缓存',null=False)
     # Upload_file
-    Status = CharField(verbose_name='状态',null=False)
+    Status = CharField(verbose_name='状态',null=False)#状态-0启用-1禁用-10删除
     Description = CharField(verbose_name='描述',null=False)
-    Create_time = DateTimeField()
-    Update_time = DateTimeField()
+    Create_time = DateTimeField(verbose_name='创建时间',null=False,default=datetime.datetime.now())
+    Update_time = DateTimeField(verbose_name='修改时间',default=datetime.datetime.now())
 
 # 建表
 def create_table():

@@ -10,19 +10,9 @@ from peewee import SQL
 
 @rest.route('/user/getuser',methods=['GET'])
 def get_user():
-    
-    
-    # if id == None and username == None:
-    #     userlist = User.select(User.id,User.username,User.status,User.role_id)
-    #     result = userlist
-    # if id != None and username == None:
-    # userlist = User.select(User.id,User.username,User.status,User.role_id).where(User.id == id)
-    #     result = userlist
-    #     # return response(data={'userinfo':common.query_to_list(userinfo)},status_code=200)
-    # if id == None and username != None:
-    #     userlist = User.select(User.id,User.username,User.status,User.role_id).where(User.username == username)
-    #     result = userlist
-    # userlist = User.select(User.id,User.username,User.status,User.role_id)
+    '''
+    查询用户接口
+    '''
     # result = userlist
     username = request.args.get('username')
     role_id = request.args.get('userrole')
@@ -61,13 +51,9 @@ def get_user():
             if sort:
                 sort_column = 'id'
                 if sort == '+id':
-                # sort_column = sort.split('+')[1]
                     sort_direction = 'asc'
                 else:
                     sort_direction = 'desc'
-
-            # 搜索
-            search_value = request.args.get('searchValue', '')
         except:
             return response(data={},status_code=200,msg='参数格式不正确')
         
@@ -84,7 +70,7 @@ def get_user():
                 query = query.order_by(field)
         #分页
         if page:
-                    query = query.paginate(page, length)
+            query = query.paginate(page, length)
 
     
 
@@ -98,7 +84,6 @@ def update_user():
     return:json
     '''
     data = json.loads(request.get_data(as_text=True))
-    print(data)
     # user_id = request.form.get('id')
     # status = request.form.get('status')
     user_id = data['id']
@@ -112,10 +97,15 @@ def update_user():
 
 @rest.route('/user/edituser',methods=['POST'])
 def edit_user():
-    user_id = request.form.get('id')
-    user_name = request.form.get('username')
-    status = request.form.get('status')
-    role_id = request.form.get('userrole')
+    '''
+    编辑用户接口
+    '''
+    data = json.loads(request.get_data(as_text=True))
+    print(data)
+    user_id = data['id']
+    user_name = data['username']
+    status = data['status']
+    role_id = data['role_id']
     try:
         User.update(status = status,username = user_name,role_id = role_id).where(User.id == user_id).execute()
     except:
